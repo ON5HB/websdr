@@ -1,0 +1,36 @@
+1810lsb Start 160m
+1850lsb Calling
+1942lsb Gents of 1942
+1972lsb 1972 Group
+2000lsb Stop 160m
+2182usb Int Rescue
+2761usb Oostende Radio
+3500lsb Start 80m
+3609lsb België ronde
+3625lsb DutchDay
+3630lsb DutchNet
+3673usb NL Coastguard
+3692lsb Amberg
+3705am AM ronde
+3800lsb Stop 80m
+144525fm Often talk
+145575fm PI3UTR Utrecht
+145600fm ON0HC Manage
+145637.5fm ON0ZK Heist op den Berg
+145650fm ON0LG Retinne
+145662.5fm ON0NL Peer
+145678.5fm ON0LTV Manhay
+145700fm PI3EHV Eindhoven
+145712.5fm ON0DST Diest
+145725fm ON0NR Wepion
+145737.5fm ON0EPL Luik
+145762.5fm ON0AN Antwerpen
+145775fm ON0LB Vreren
+145787.5fm ON0DP Boom
+145800fm ISS Down
+430125fm PI2NOS Hilversum
+438900fm ON0LB Vreren
+439112.5fm ON0MLB Genk
+439287.5fm ON0LIR Lier
+
+
