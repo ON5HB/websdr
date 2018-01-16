@@ -1,4 +1,4 @@
-websdr
+#websdr
 
 My Websdr config files
 
