@@ -1,5 +1,3 @@
-#websdr
-
 My Websdr config files
 
 In here you find my used drivers, we patched the rtl_tcp to be able to use -D 2 for direct sampling.
