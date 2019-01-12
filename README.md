@@ -1,6 +1,5 @@
 My Websdr config files
 
-In here you find my used drivers, we patched the rsp_tcp to be able to use it with websdr.org.
 
 It can tune directly to freq, no progfreq neeeded, just start the modified driver and you are on your way.
 
