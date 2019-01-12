@@ -1,36 +1,324 @@
-1810lsb Start 160m
+12lsb Icom 7300 IF output<br>Use LSB/USB/AM to listen!<br>Icom band only!
+17.2cwn SAQ Alexanderson<br>Alternator Transmitter
+77.5cw DCF77
+129.1cw DCF49
+135.7lsb Begin 2200m 
+137.8lsb End 2200m
+139cw DCF39
+140.22cw DCF60
+162cw TDF time signal
+183am Europe1
+198am BBC4
+216am Monte Carlo
+234am RTL-FR
+252am Chaine3 Algeria
+270am ČRo Radiožurnál
+472lsb Begin 630m
+479lsb End 630m
+501cw Begin 600m
+504cm End 600m
+490cw Navtex<br> Local languages
+518cw Navtex<br> English
+531am Jill fmn 
+540am Kossuth<br>Onda Cero
+549am Jill fmn
+558am RNE R5 <br>Spectrum International<br>Romania Actua
+567am Romania Actua<br>RNE R5 Barcelona
+576am RNE R5 Palau-solità
+585am RNE Madrid
+594am Riyadh S-Arabia (night)
+595am SNRT (night)
+603am Smooth<br>Romania Actua<br>RNE R5 Sevilla
+612am Espania RNE<br>Radonezh/Narodnoye Moscow
+621am RNE Palma 
+630am Tunesia<br>SRR Timisoara (night) 
+639am ČRo Dvojka<br>RNE Galicia
+648am Caroline
+657am RNE Extremadura<br>RAI1
+666am Barcelona
+684am Espania RNE
+693am BBC5Live
+702am SRo3 Devín (night) 
+711am România Actualităţi (night)
+720am România Actualităţi (night)
+729am Espania RNE
+747am R4Brainport
+756am România Actualităţi
+738am Espania RNE
+774am Espania RNE
+783am COPE
+801am Espania RNE
+810am Scotland
+819am ERTU Al-Barnameg al-Aam (night)
+837am Cope Sevilla
+873am Zaragoza,MR4
+855am Espania RNE
+864am ERTU Al-Quran al-Karim (night)
+882am BBC Wales
+891am euRegioRadio 75W
+900am RAIint
+909am 5Live
+918am IntSpain
+936am RAI1<br>Ukrainian R1
+954am Český rozhlas 2<br> Onda Cero (night)
+999am Transworld<br>Cope 
+1053am Talksport
+1062am Country Czech
+1089am Talksport
+1161am Viking2
+1179am Romania Actua
+1188am MR4-Nemzetiségi Adások
+1215am AbsoluteRadio
+1233am Dechovka
+1332am ČRo Dvojka
+1341am BBC Ulster
+1458am LycaRadio
+1467am TWR EU
+1485am euRegioRadio
+1548am Gold UK
+1557am Smooth UK
+1566am Vahon Hindustani 
+1575am RAI1
+1584amn Panjap UK
+1618amn Curasao<br>Pirate
+1602amn Waddenzee
+1620amn Zwarte Bouvier<br>Pirate
+1630am Asteras
+1634amn Rustende Jager<br>Pirate
+1636am Akenzo
+1647amn Witte Tornado and Lady<br>Pirate
+1810lsb Begin 160m
 1850lsb Calling
+1880usb Falmouth<br>Coastguard
+1883usb Belfast<br>Coastguard
+1888usb IAR Roma<br>Coast station
+1890usb Holland<br>Coastguard
 1942lsb Gents of 1942
 1972lsb 1972 Group
-2000lsb Stop 160m
+2000lsb End 160m
 2182usb Int Rescue
+2618.5am Meteo<br>RN London HF-Fax
 2761usb Oostende Radio
-3500lsb Start 80m
-3609lsb België ronde
+3367.6usb Vissersschepen?
+3413usb Volmet<br>Europe
+3500lsb Begin 80m
+3555.555cw PA0RYL<br>10mW beacon
+3600amn AM Dutch
+3605amn SRS AMnet
+3605lsb PI4VRZA<br>Zaterdags
+3609lsb BelgiëNet
+3615amn VMARS
 3625lsb DutchDay
 3630lsb DutchNet
-3673usb NL Coastguard
-3692lsb Amberg
-3705am AM ronde
-3800lsb Stop 80m
-144525fm Often talk
-145575fm PI3UTR Utrecht
-145600fm ON0HC Manage
-145637.5fm ON0ZK Heist op den Berg
-145650fm ON0LG Retinne
-145662.5fm ON0NL Peer
-145678.5fm ON0LTV Manhay
-145700fm PI3EHV Eindhoven
-145712.5fm ON0DST Diest
-145725fm ON0NR Wepion
-145737.5fm ON0EPL Luik
-145762.5fm ON0AN Antwerpen
-145775fm ON0LB Vreren
-145787.5fm ON0DP Boom
-145800fm ISS Down
-430125fm PI2NOS Hilversum
-438900fm ON0LB Vreren
-439112.5fm ON0MLB Genk
-439287.5fm ON0LIR Lier
-
-
+3673usb Holland<br>Coastguard
+3785lsb KLMnet
+3692lsb OTCnet<br>Deutsches Net
+3705amn AM ronde
+3800lsb End 80m
+3950lsb Hurricane Watch
+3985am MiAmigo
+5279usb RAOTA
+5351.5lsb Begin 60m
+5363usb Dutch
+5366.5lsb End 60m
+5583usb Air Shanwick
+5450usb Volmet<br>EUR RAF Military1
+5475usb Volmet<br>SAM Agentina
+5499usb Volmet<br>AFI Africa
+5493usb Air Traffic<br>Africa 4 route
+5505usb Volmet<br>Europe
+5520usb Air Traffic<br>Caribbean B route
+5547usb Air Traffic<br>Central E-Pacific 1&2 route
+5550usb Air Traffic<br>Caribbean A route
+5574usb Air Traffic<br>Central E-Pacific 1&2 route
+5598usb Air Traffic<br>N-Atlantic A route
+5601usb Volmet<br>SAM S-America
+5616usb Air Traffic<br>N-Altantic B route
+5628usb Air Traffic<br>N-Pacific 2&4 route
+5649usb Air Traffic<br>N-Atlantic C route
+5652usb Air Traffic<br>Africa 2 route
+5658usb Air Traffic<br>Africa 3 route
+5673usb Volmet<br>SEA 2 S-E Asia
+5677usb Air Traffic<br>N-Pacific 2&4 route
+5680usb Int Rescue
+5830am WWTW<br>Free Asia
+5840am World Music
+5905am Deutscher<br>Wetterdienst
+5920am Religious
+5935am PBS Xizang
+5960am China
+5970am China<br>Itatiaia
+5980am Romania Int<br>Bible?
+5990am Senado
+5995am Gazeta
+6604usb Volmet<br>NAT N-Atlantic
+6030am Religious
+6040am Romania Int<br>Brazil2
+6305am Alice
+6070am Channel292
+6085am MiAmigo
+6215am Maritime Rescue 
+6160am VoA
+6150am Marabu
+6170am Romania
+6175am China
+6180am Deutscher<br>Wetterdienst
+6185am Taiwan Int
+6205am Laser
+6320am Quadzilla?
+6535usb Air Traffic<br>Africa 1 route
+6547usb Air Shanwick
+6550usb Holland<br>Coastguard
+6577usb Air Traffic<br>Caribbean A route
+6586usb Air Traffic<br>Caribbean B route
+6598usb Europe
+6617usb Volmet<br>NCA CIS 1
+6622usb Air Traffic<br>N-Atlantic F route
+6628usb Air Traffic<br>N-Atlantic E route
+6651usb Denmark<br>Coastguard
+6661usb Air Traffic<br>Mumbai
+6665usb Air Traffic<br>N-Pacific 2&4 route
+6676usb Volmet<br>SEA 1 S-E Asia
+6679usb Volmet<br>PAC Pacific
+6685usb Air Traffic<br>Russia
+6693usb Volmet<br>NCA CIS 3
+6733usb Tascomm UK Mil
+6754usb Volmet<br>NAM RCAF Trenton
+6884usb Volmet<br>AFI Angola
+7000lsb Begin 40m
+7062lsb PI4VRZA
+7073lsb Collins618T
+7118lsb SOTA activators<br>+/- a few kHz
+7200lsb End 40m
+7205am France
+7210am China
+7215am China
+7225am China<br>VoA
+7235am Iran<br>Ethiopia
+7245am Tajik
+7255am China<br>Nigeria
+7280am Vietnam
+7295am China<br>Sakha
+7340am China
+7395am China
+7440am Channel292
+13261usb Air Traffic<br>E-Pacific 1&2 route
+13264usb Volmet<br>Europe
+13270usb Volmet<br>NAT N-Atlantic
+13273usb Air Traffic<br>Africa 2 route
+13279usb Volmet<br>NCA N-C-Asia<br>SAM S-America
+13282usb Volmet<br>PAC Pacific
+13285usb Volmet<br>SEA 2 S-E Asia
+13288usb Air Traffic<br>Africa 3 route
+13291usb Air Traffic<br>N-Atlantic B&D&F route
+13294usb Air Traffic<br>Africa 4 route<br>N-Pacific 2&4 route
+13297usb Air Traffic<br>Caribbean A route
+13306usb Air Traffic<br>N-Atlantic A&C route
+13318usb AIR<br>SEA 13
+13321usb AMS<br>2 3
+13324usb AMS<br>W I/III
+13327usb AMS<br>W I/IV
+13330usb AMS<br>W II/V
+13333usb AMS<br>W I/III
+13336usb AMS<br>W I/IV
+13339usb AMS<br>W II/V
+13342usb AMS<br>W I/III
+13345usb AMS<br>W I/IV
+13348usb AMS<br>W II/V
+13351usb AMS<br>W I/III
+13354usb Air Traffic<br>N-Atlantic E route
+13357usb Air Traffic<br>Africa 1 route
+13635am Turkey
+13665am China
+13710am China
+13750am Romania Int.
+13760am China<br>Korea<br>Turkey
+13830am Tibetian
+13845am WWCR Nashville
+13870am China
+14000usb Begin 20m
+14128usb VE3FGL
+14160usb Suriname
+14173usb Nassibal
+14306usb VlaamsVakNet
+14325usb Hurricane Watch
+14345usb Dutch NZ-Aus
+14350usb End 20m
+15200am Deutsche Welle
+21000usb Begin 15m
+21435usb NassiBal
+21450usb End 15m
+144000fmn Begin 2m
+144525fmn Often talk
+145237.5fmn ON0LIL Genk<br>Echolink Gateway
+145575fmn PI3UTR Utrecht
+145587.5fmn PA3FNR Helmond
+145600fmn ON0HC Manage
+145612.5fmn ON0GBN Vloesberg
+145625fmn ON0ULG Luik
+145637.5fmn ON0ZK Heist op den Berg
+145650fmn ON0LG Retinne<br>PI3BRD Breda
+145662.5fmn ON0NL Peer
+145687.5fmn ON0LTV Manhay
+145700fmn PI3EHV Eindhoven
+145712.5fmn ON0DST Diest
+145725fmn ON0NR Wepion
+145737.5fmn ON0EPL Luik
+145750fmn ON0LU Saint Hubert
+145762.5fmn ON0AN Antwerpen<br>ON0LS Arlon
+145775fmn ON0LB Vreren
+145787.5fmn DB0WA Aachen<br>ON0DP Boom
+145800fmn ISS Down
+146000fmn End 2m
+430000fmn Begin 70cm
+430012.5fmn PI2GOR Gorkem<br>PI2YSS Zutphen
+430025fmn PI2BOZ Bergen op Zoom
+430050fmn ON0GEE Geel
+430062.5fmn PI2NEN Nuenen
+430075fmn ON0CLR Montignies-le-Tilleul
+430100fmn ON0WTO Vieux-Genappe<br> PI2EHV Eindhoven
+430125fmn PI2NOS Hilversum
+430237.5fmn PI2SHB Den Bosch
+430250fmn PI2AMF Amersfoort
+430275fmn ON0VTI Tielt
+430287.5fmn PI2KAR Bladel<br>PI2FLB Almere
+430350fmn PI2HGL Den Haag<br>PI2VNR Venray
+430362.5fmn PI2RMD Roermond
+430375fmn PI2OSS Oss
+438900fmn ON0LB Vreren
+439112.5fmn ON0MLB Genk
+439287.5fmn ON0LIR Lier
+440000fmn End 70cm
+1810.5cwn YR2TOP-beacon100W 
+1853cwn OK0EV-beacon100mW
+1875cwn DL3KR-beacon5W
+1998cwn SA6RR-beacon800mW
+1999.5cwn SM6AAL-beacon500mW
+3525cwn PY2DSB-beacon4W
+3549cwn ER1AAZ-beacon4W
+3566.5cwn SM6AAL-beacon200mW
+3570cwn YO8RIX-beacon20mW 
+3576.8cwn IZ3DVW-beacon500mW
+3577cwn FR1GZ-beacon10W
+3579cwn DK0WCY-beacon30W   
+3579.8cwn SM2IUF-beaconQRPP              
+3594.500cw OK0EU-beacon1W<br>Jumps 4Hz
+3600cwn OK0EN-beacon150mw
+7003cwn ES1VHF-beacon      
+7034.8cwn PT9BCN-beacon
+7036.5cwn SZ6IOA-beacon
+7038.500cw OK0EU-beacon1W<br>Jumps 4Hz
+7039.1cwn SK7CQ-beacon
+7039.2cwn IK1HGI-beacon100mW     
+7039.4cwn OK0EPB-beacon1W
+7039.8cwn IZ3DVW-beacon300mW
+7047.5cwn YD0MWK-beacon5W
+14100.0cwn Int-Beacon-Project<br>100W-10W-1W-100mW
+144415cwn DB0JW-beacon10W
+144416cwn PI7CIS-beacon50W
+144418cwn ON0VHF-beacon20W
+144425cwn F5ZAM-beacon14W
+144427cwn PI7PRO-beacon10W
+144430cwn GB3VHF-beacon30W
+144431cwn PI7BRG-beacon10W
+144489cwn DB0XIT-beacon5W
