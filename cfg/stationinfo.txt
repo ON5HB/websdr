@@ -1,27 +1,87 @@
-12lsb Icom 7300 IF output<br>Use LSB/USB/AM to listen!<br>Icom band only!
-17.2cwn SAQ Alexanderson<br>Alternator Transmitter
+9.0am Sferics (lightning cloud to ground)
+11.9cwn RSDN20
+12.09cwn RSDN20
+12.65cwn RSDN20
+14.88cwn RSDN20
+15.6cwn RSDN20
+16.0cw GBR
+16.4cw JXN
+17.2cw SAQ Alexanderson<br>Alternator Transmitter
+17.9cw RDL
+18.1cw RDL
+18.3cw HWU
+18.9cw RDL
+19.6cw GQD/GBZ
+20.27cw ICV
+20.5cw RJH
+20.76cw ICV
+20.9cw HWU
+21.1cw RDL
+21.75cw HWU
+22.1cw GBZ/GQD
+22.6cw HWU
+23.0cw RJH
+23.4cw DOH38
+24.0cw NAA
+25.0cw RJH
+25.1cw RJH
+25.5cw RJH
+26.7cw TBB
+29.7cw I ?
+30.0am Sferics (lightning cloud to cloud)
+37.5cw TFK
+38.0cw SHR Ruda
+40.4cw SAS Varberg
+40.75cw NST
+42.5cw SRC
+42.6cw SAS2
+44.2cw SWE SAS2 SRC Tving
+45.9cw NSY
+49.0cw SXA
+50.0cw RTZ
+52.0cw GNY1
+53.4cw TBG
+57.4cw GXH
+60.0cw MSF
+61.8cw RBU?
+62.6cw FUG
+63.9cw FTA63
+65.8cw FUE
+66.6cw RBU
+68.0cw GBY20?
 77.5cw DCF77
+81.0cw GYN2
+82.75cw GYB/MKL?
+100.0am LORAN
+122.5cw DCF42
+123.7cw DCF42
 129.1cw DCF49
+135.6cw HGA22
 135.7lsb Begin 2200m 
+135.8cw SXV
+136.0usb WSPR & OPERA Op32
 137.8lsb End 2200m
 139cw DCF39
-140.22cw DCF60
+140.22usb DCF60
+153am Antena Satelor
 162cw TDF time signal
-183am Europe1
 198am BBC4
 216am Monte Carlo
+225am Polskie Radio RP1
 234am RTL-FR
 252am Chaine3 Algeria
 270am ČRo Radiožurnál
+277amv CHT NDB
 472lsb Begin 630m
 479lsb End 630m
 501cw Begin 600m
 504cm End 600m
 490cw Navtex<br> Local languages
 518cw Navtex<br> English
-531am Jill fmn 
+531am Jill
 540am Kossuth<br>Onda Cero
-549am Jill fmn
+541am Onda Cero Catal
+549am Spirit R Eire
 558am RNE R5 <br>Spectrum International<br>Romania Actua
 567am Romania Actua<br>RNE R5 Barcelona
 576am RNE R5 Palau-solità
@@ -50,6 +110,7 @@
 801am Espania RNE
 810am Scotland
 819am ERTU Al-Barnameg al-Aam (night)
+828am R4Brainport<br>Daytime Nederwetten
 837am Cope Sevilla
 873am Zaragoza,MR4
 855am Espania RNE
@@ -65,28 +126,82 @@
 1053am Talksport
 1062am Country Czech
 1089am Talksport
+1152am Romania Int
 1161am Viking2
 1179am Romania Actua
 1188am MR4-Nemzetiségi Adások
 1215am AbsoluteRadio
 1233am Dechovka
-1332am ČRo Dvojka
+1242am France Info
+1251am Smooth Radio UK
+1260am Absolute Radio UK
+1269am Deutschlandfunk
+1278am France Bleu & Misc RSL UK
+1287am BFBS Radio Aldershot UK
+1296am Radio XL UK
+1305am Premier Radio UK
+1314am RNE Radio 5 Spain
+1323am Smooth Radio UK
+1332am Premier Radio London<br>ČRo Dvojka
 1341am BBC Ulster
+1350am Misc RSL UK
+1359am Smooth Radio UK
+1368am BBC Radio Surrey
+1377am France Info
+1386am Misc RSL UK
+1395am Radio Tirana
+1404am France Info & ERT Komotini Greece 
+1413am Premier Radio London
+1422am Deutschlandfunk
+1431am Smooth Radio Reading UK
+1440am RTL/ China Radio International
+1449am Asian Network
 1458am LycaRadio
 1467am TWR EU
 1485am euRegioRadio
+1494am France Info
+1503am Betar Bangla London
+1530am BBC Radio Essex
 1548am Gold UK
 1557am Smooth UK
 1566am Vahon Hindustani 
 1575am RAI1
 1584amn Panjap UK
+1593am SRR Radio Romania ?
+1615am Dutch Pirate<br>with good Music!<br>Well done!
 1618amn Curasao<br>Pirate
 1602amn Waddenzee
 1620amn Zwarte Bouvier<br>Pirate
 1630am Asteras
+1638am Edelkampioen<br>Pirate
 1634amn Rustende Jager<br>Pirate
 1636am Akenzo
 1647amn Witte Tornado and Lady<br>Pirate
+1655am Dutch Pirate station
+1635usb Vardo(LGV)Marine
+1638usb Turku(OFK)Marine
+1650usb (CROSS)Marine
+1656usb Chipiona Marine
+1659usb Bodo(LGP)Marine
+1665usb Tjome(LGT)Marine
+1677usb Turku(OFK)& Malin Head(EJM)Marine
+1680usb Floro(LGL)Marine
+1689usb Las Palmas Marine
+1692usb Rogaland (LGQ)Marine
+1695usb Vardo(LGV)Marine
+1696usb La Garde(CROSS)Marine
+1698usb Coruna Marine
+1704usb Tarifa Marine
+1710usb Bodo(LGP)Marine
+1713usb Vardo(LGV)Marine
+1719usb Turku(OFK)Marine
+1731usb Svalbard(LGS)Marine
+1743usb Butt of Lewis Coastguard
+1752usb Valentia(EJK)Marine
+1764usb Finisterre Marine
+1770usb Collafirth & Bodo Coastguard
+1782usb Orlandet(LFO)Marine
+1785usb Farsund(LGZ)Marine
 1810lsb Begin 160m
 1850lsb Calling
 1880usb Falmouth<br>Coastguard
@@ -99,24 +214,28 @@
 2182usb Int Rescue
 2618.5am Meteo<br>RN London HF-Fax
 2761usb Oostende Radio
+2941usb RUS Rostov Volmet x25,55
 3367.6usb Vissersschepen?
 3413usb Volmet<br>Europe
+3485usb Volmet<br>USA
 3500lsb Begin 80m
 3555.555cw PA0RYL<br>10mW beacon
-3600amn AM Dutch
-3605amn SRS AMnet
-3605lsb PI4VRZA<br>Zaterdags
-3609lsb BelgiëNet
+3567.750cw CW QRQ Point
+3600am AM Dutch<br>Elke donderdag 19-21u
+3605lsb PI4VRZ/A<br>Zat morgen
+3609lsb België Net<br>Ong.9u
 3615amn VMARS
-3625lsb DutchDay
-3630lsb DutchNet
+3625lsb Nederlands<br>Overdag
+3630lsb Nederlands<br>Ong.17u
 3673usb Holland<br>Coastguard
+3722lsb Aachener Runde<br>Jeden Samstag
 3785lsb KLMnet
-3692lsb OTCnet<br>Deutsches Net
-3705amn AM ronde
+3692lsb Deutsches Net
+3705amn SRS<br>AM ronde
 3800lsb End 80m
+3920am Pirate Radio<br>Europe
 3950lsb Hurricane Watch
-3985am MiAmigo
+3985am MiAmigo<br>19-20CET
 5279usb RAOTA
 5351.5lsb Begin 60m
 5363usb Dutch
@@ -151,12 +270,12 @@
 5980am Romania Int<br>Bible?
 5990am Senado
 5995am Gazeta
+6000am Religious
 6604usb Volmet<br>NAT N-Atlantic
-6030am Religious
 6040am Romania Int<br>Brazil2
 6305am Alice
 6070am Channel292
-6085am MiAmigo
+6085am MiAmigo<br>9-19CET
 6215am Maritime Rescue 
 6160am VoA
 6150am Marabu
@@ -165,6 +284,7 @@
 6180am Deutscher<br>Wetterdienst
 6185am Taiwan Int
 6205am Laser
+6275am Batavia<br>Pirate
 6320am Quadzilla?
 6535usb Air Traffic<br>Africa 1 route
 6547usb Air Shanwick
@@ -187,6 +307,7 @@
 6884usb Volmet<br>AFI Angola
 7000lsb Begin 40m
 7062lsb PI4VRZA
+7067lsb 40m ronde dutch<br>12.30-13h local time
 7073lsb Collins618T
 7118lsb SOTA activators<br>+/- a few kHz
 7200lsb End 40m
@@ -199,6 +320,7 @@
 7255am China<br>Nigeria
 7280am Vietnam
 7295am China<br>Sakha
+7310am MiAmigo<br>12-16CET
 7340am China
 7395am China
 7440am Channel292
@@ -229,7 +351,7 @@
 13354usb Air Traffic<br>N-Atlantic E route
 13357usb Air Traffic<br>Africa 1 route
 13635am Turkey
-13665am China
+13670am China
 13710am China
 13750am Romania Int.
 13760am China<br>Korea<br>Turkey
@@ -303,7 +425,6 @@
 3579cwn DK0WCY-beacon30W   
 3579.8cwn SM2IUF-beaconQRPP              
 3594.500cw OK0EU-beacon1W<br>Jumps 4Hz
-3600cwn OK0EN-beacon150mw
 7003cwn ES1VHF-beacon      
 7034.8cwn PT9BCN-beacon
 7036.5cwn SZ6IOA-beacon
