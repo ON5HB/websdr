@@ -1,38 +1,46 @@
 #!/bin/bash
 
-
+killall -KILL rsp_tcp
 killall -KILL websdr64
-killall -s 9 rsp_tcp
-killall -s 9 rsp_tcp
-killall -s 9 rsp_tcp
+
+sleep 2
+/etc/init.d/rsp_tcp_1 stop
+sleep 2
+/etc/init.d/rsp_tcp_2 stop
+sleep 2
+/etc/init.d/rsp_tcp_3 stop
+#sleep 4
+#/etc/init.d/rtl_tcp_1 restart
+sleep 2
+/etc/init.d/rsp_tcp_1 start
+sleep 2
+/etc/init.d/rsp_tcp_2 start
+sleep 2
+/etc/init.d/rsp_tcp_3 start
 
 
 cd /opt/websdr/dist11
 
-### RSP1A rules
-sleep 1
-screen -dmS rsp_tcp1 taskset -c 0 rsp_tcp -d1 -p1234 -r60 -A-30 -L -N -n1500
-sleep 1
-screen -dmS rsp_tcp2 taskset -c 0 rsp_tcp -d2 -p1235 -r60 -A-30 -L -N -n1500
-sleep 1
-screen -dmS rsp_tcp3 taskset -c 0 rsp_tcp -d3 -p1236 -r60 -A-30 -L -N -n1500
+sleep 3
+taskset -c 3 ./websdr64 > /dev/null 2>&1 &
+# nice -n -10 screen -dmS websdr ./websdr64
 
-sleep 4
-nice -n -10 screen -dmS websdr taskset -c 1 ./websdr64
-
-### Needed for upconverter
+### Needed for upconverter, boxes need a restart!!
 ##### sleep 120 needed for FFT = 2 value
-sleep 6
-killall -s9 rsp_tcp
-killall -s9 rsp_tcp
-killall -s9 rsp_tcp
+#sleep 4
 
-sleep 1
-screen -dmS rsp_tcp0-2 taskset -c 0 rsp_tcp -p1234 -L -d1 -N -n1500
-sleep 1
-screen -dmS rsp_tcp2-5 taskset -c 0 rsp_tcp -p1235 -L -d2 -N -n1500
-sleep 1
-screen -dmS rsp_tcp5-8 taskset -c 0 rsp_tcp -p1236 -L -d3 -N -n1500
+##### Just to make sure they are killed!
+#killall -s9 rsp_tcp
+#killall -s9 rsp_tcp
+
+#sleep 3
+#/etc/init.d/rsp_tcp_1 restart
+#sleep 3
+#/etc/init.d/rsp_tcp_2 restart
+#sleep 3
+#/etc/init.d/rsp_tcp_3 restart
+#sleep 3
+#/etc/init.d/rsp_tcp_4 restart
 
 exit
 
