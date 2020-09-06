@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
 
 <!-- TODO: put a nice title in the next line -->
 <!-- <title>WebSDR at ON5HB / ON3MS in Heppen - Belgium</title> -->
@@ -23,33 +26,43 @@ scrolltitle();
 
 <!-- TODO: put something nice here that explains what this page is, where your receiver is, your contact information, etc. -->
 <!-- Please include some reference to the websdr.org side, so users of your radio can find out more about the system. -->
-<br>
-<b>This is a WebSDR receiver, located in Heppen - Limburg - Belgium - JO21oc - 70m ASL.</b>
-<br><br>
-It is operated by Bas ON5HB and Marian ON3MS, e-mail <a href="mailto:on5hb@heppen.be">==> Bas and Marian <==</a>
-<br>
-Beware when we are transmitting ourselves the reception can be disturbed.
-<br><br>
-More information about the WebSDR project can be found on <a href="http://www.websdr.org">http://www.websdr.org</a>.
-<p>
-<b>NOTE 1 </b> you need both <i>Java</i> and <i>JavaScript</i> enabled for this
-page to work properly. 
-<br>
-If you don't hear anything, probably Java 
-is disabled or its version is too old (i.e., pre-1.4.2).
-<br>
-<br>
-<b>NOTE 2 </b> If you have an Android- or Apple-powered tablet or mobile phone, try this one: <a href="http://heppen.be:8091/m.html">==> Mobile version <==</a>
-<br>
-<br>
-<b>NOTE 3 </b> There seems to be some strange signals happening at the left side of the waterfall, probably some mixing from the TS-590.
-<br>
-Signals can vary due to the antenna-tuner and used antenna as the dongles are connected to my TS-590 for RX-signals, they use the same antenna's as my tranceiver.
 <hr>
-
+<h1>
+<b>This is a WebSDR receiver, located in Heppen - Limburg - Belgium - JO21oc - 70m ASL.</b></h1>
+<hr>
+<a href="http://www.heppen.be/honypot/honypot.php" style="display: none;">splitting-expression</a>
+<br>
+It is operated by Bas ON5HB and Marian ON3MS, e-mail <a href="mailto:on5hb@heppen.be" style="color: #fffff0" >==> Bas and Marian <==</a>
+<br>
+<h3>
+!! Beware when we are transmitting ourselves reception will be disturbed !!
+</h3>
+Information about the WebSDR project and other servers can be found at <a href="http://www.websdr.org" style="color: #fffff0">==> http://www.websdr.org <==</a>
+<p>
+<b>NOTE 1 </b> You need both <i>Java</i> and <i>JavaScript</i> enabled for this page to work properly.
+<br>
+If you don't hear anything, probably Java is disabled or the version is too old (i.e. pre-1.4.2).
+<br><br>
+<b>NOTE 2 </b> Antenna is normally G5RV or Inverted-L (54m longwire), depends on the bands I'm using myself.
+<br><br>
+<b>NOTE 3 </b> No sound with <u>Google Chrome Browser</u>? Try this: <u>chrome://flags/#enable-autoplay-ignore-web-audio</u> -> set enabled.<br>
+From version Chrome v76.0.3809.100 try this: <u>chrome://settings/content/sound</u> -> allow/add url: http://heppen.be:8091/<br>
+Compare against Firefox Browser as Firefox is known to work perfectly with this websdr.
+<br><br>
+<b>NOTE 4 </b> All receivers are SDRplay RSP1A and RSP2 <a href="https://www.sdrplay.com/rsp1a/" style="color: #fffff0">==> Bring me to SDRplay info RSP1A page <==</a><br>
+If you need information on how to install the RSP1A at your own websdr.org-sdr, just mail us, the email-address is listed at the top of this page.
+<br><br>
+<b>NOTE 5 </b> DSP Noise reduction only works on fast computers, it gives audio stutter-if your CPU is too slow. This is because audio processing is done at the client side.
+<br>
+<hr>
+<h3>Please support this project with a small donation so we can buy better receivers, receivers are real expensive:</h2>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="WMHSAYH3YA3JS" />
+<input type="image" src="https://www.paypalobjects.com/en_US/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safe way to pay online!" alt="Donate with PayPal button" />
+</form>
 
 <!--#include file="websdr-controls.html"-->
-
 </body>
 </html>
 
