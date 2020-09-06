@@ -5,14 +5,8 @@
 
 
 // variables governing what the user listens to:
-var lo=-3.0,hi=-0.2;   // edges of passband, in kHz w.r.t. the carrier
+var lo=-2.90,hi=-0.20;   // edges of passband, in kHz w.r.t. the carrier
 var mode="LSB";            // 1 if AM, 0 otherwise (SSB/CW); or text "AM", "FM" etc
-var band=0;            // id of the band we're listening to
-var freq=bandinfo[0].vfo;  // frequency (of the carrier) in kHz
-var memories = [ ];
-
-var lo=0.2,hi=3.0;   // edges of passband, in kHz w.r.t. the carrier
-var mode="USB";            // 1 if AM, 0 otherwise (SSB/CW); or text "AM", "FM" etc
 var band=0;            // id of the band we're listening to
 var freq=bandinfo[0].vfo;  // frequency (of the carrier) in kHz
 var memories = [ ];
@@ -25,7 +19,8 @@ var waterslowness=4;
 var waterheight=100;
 var watermode=1;
 var scaleheight=14;
-
+var watercontrast=false;
+var waterbrightness=128;
 
 // information about the available "virtual" bands:
 // contains: effsamplerate, effcenterfreq, zoom, start, minzoom, maxzoom, samplerate, centerfreq, vfo, scaleimgs, realband
@@ -56,11 +51,10 @@ var interval_ajax3;
 var timeout_idle;
 var setfreqif_fut_timer;  // timer for typing in the frequency field
 
-
 // misc
 var serveravailable=-1;  // -1 means yet to be tested, 0 and 1 mean false and true
 var smeterpeaktimer=5;
-var smeterpeak=0;    
+var smeterpeak=0;
 var allloadeddone=false;
 var waitingforwaterfalls=0;  // number of waterfallapplets that are still in the process of starting
 var band_fetchdxtimer=new Array();
@@ -76,9 +70,6 @@ var khzperpixel=bandinfo[band].samplerate/1024;
 var passbandobjstart=0;    // position (in pixels) of start of passband on frequency axis, w.r.t. location of carrier
 var passbandobjwidth=0;    // width of passband in pixels
 var centerfreq=bandinfo[band].centerfreq;
-
-
-
 
 function debug(a)
 {
@@ -119,11 +110,24 @@ function timeout_idle_restart()
 
 function send_soundsettings_to_server()
 {
+
+var n=encodeURIComponent(document.usernameform.username.value)
+  if(n) n=n.replace(/[^ -~]/g, "");
+
   var m=mode;
-  if (m=="USB") m=0;
+  if (m=="USBN") m=0;
+  else if (m=="USB") m=0;
+  else if (m=="LSBN") m=0;
   else if (m=="LSB") m=0;
+  else if (m=="CWN") m=0;
   else if (m=="CW") m=0;
+  else if (m=="AMN") m=1;
+  else if (m=="AMV") m=1;
+  else if (m=="AMSYNC") m=2;
+  else if (m=="AMNSYNC") m=2;
   else if (m=="AM") m=1;
+  else if (m=="FMN") m=4;
+  else if (m=="FMW") m=4;
   else if (m=="FM") m=4;
   try {
      soundapplet.setparam(
@@ -132,9 +136,11 @@ function send_soundsettings_to_server()
         +"&lo="+lo
         +"&hi="+hi
         +"&mode="+m
-        +"&name="+encodeURIComponent(document.usernameform.username.value) 
+//        +"&name="+encodeURIComponent(document.usernameform.username.value) 
+	+"&name="+n
         );
   } catch (e) {};
+  try { soundapplet.modeinfo(mode); } catch(e) {}; //tone-removal
   timeout_idle_restart()
 }
 
@@ -149,6 +155,24 @@ function setautonotch(a)
 {
    a=Number(a);
    soundapplet.setparam("autonotch="+a);
+}
+
+function setnotch2(a)
+{
+   a=Number(a);
+   soundapplet.setnotch2(a);
+}
+
+function sethighboost(a)
+{
+   a=Number(a);
+   soundapplet.sethighboost(a);
+}
+
+function setlmsnr(a)
+{
+   a=Number(a);
+   soundapplet.setlmsnr(a);
 }
 
 function setmute(a)
@@ -173,8 +197,8 @@ function draw_passband()
    passbandobj.style.top=y+"px";
    edgelowerobj.style.top=y+"px";
    edgeupperobj.style.top=y+"px";
-   carrierobj.style.top=y+"px";
-   carrierobj.style.left=x+"px";
+   carrierobj.style.top=y-15+"px";
+   carrierobj.style.left=x+0.5+"px";
    x=x+passbandobjstart;
    passbandobj.style.left=x+"px";
    edgelowerobj.style.left=(x-11)+"px";
@@ -407,11 +431,20 @@ function setmf(m, l, h)   // "set mode and filter"
 function set_mode(m)      // ...with appropriate filter
 {
    switch (m.toUpperCase()) {
-      case "USB": setmf("usb", 0.2,  3.0); break;
-      case "LSB": setmf("lsb", -3.0, -0.2); break;
-      case "AM":  setmf("am", -4,  4); break;
+      case "USBN": setmf("usb", 0.3,  2.2); break;
+      case "USB": setmf("usb", 0.20,  2.90); break;
+      case "LSBN": setmf("lsb", -2.2, -0.3); break;
+      case "LSB": setmf("lsb", -2.90, -0.20); break;
+      case "AMN": setmf("am", -2.50, 2.50); break;
+      case "AMV": setmf("amv", -0.5, 0.5); break;
+      case "AM":  setmf("am", -4.50, 4.50); break;
+      case "AMSYNC":  setmf("amsync", -4.50,  4.50); break;
+      case "AMNSYNC":  setmf("amsync", -3.00,  3.00); break;
+      case "CWN":  setmf("cw", -0.78,  -0.72); break;
       case "CW":  setmf("cw", -0.95,  -0.55); break;
-      case "FM":  setmf("fm", -5.0,  5.0); break;
+      case "FMN": setmf("fm", -4.75, 4.75); break;
+      case "FMW": setmf("fm", -8.00, 8.00); break;
+      case "FM":  setmf("fm", -4.75, 4.75); break;
    }
 }
 
@@ -423,6 +456,14 @@ function freqstep(st)
 {
    var f=nominalfreq();
 
+// Added 20180214 - KA7OEI - Code for the "= kHz" button
+// "st" == "9" means to "snap" to the nearest integer kHz frequency
+
+   if (st == "9") {
+      f = Math.round(f);
+      setfreq(f);
+   }
+   else {
    var steps_ssb= [bandinfo[band].tuningstep, 0.1, 1, 5 ];
    var steps_am5= [0.1, 1, 5];
    var steps_am9= [0.1, 1, 9];
@@ -430,11 +471,11 @@ function freqstep(st)
    var steps=steps_ssb;
    var grid=false;
    var i=Math.abs(st)-1;   
-   if (mode=="AM") {
+   if (mode=="AM" || mode=="AMSYNC" ) {
       if (freq<1800) steps=steps_am9; else steps=steps_am5;
       if (i>=1) grid=true;
    }
-   if (mode=="FM") {
+   if (mode=="FM" ) {
       steps=steps_fm;
       if (i>=1) grid=true;
    }
@@ -445,6 +486,7 @@ function freqstep(st)
    f=(st>0)?f:-f;
    if (iscw()) f-=(hi+lo)/2;
    setfreq(f);
+  }
 }
 
 function setfreqtune(s)
@@ -693,6 +735,8 @@ var sgraph={
    d0: 80,     // current estimate of lowest value of interest
    d1: -190,   // current estimate of highest value of interest
    width: 200,
+   height: 200,
+   slow: 10,
    cnt: 0
 };
 
@@ -935,9 +979,9 @@ function updbw()
    if (lo<-maxf) lo=-maxf;
    if (hi>maxf) hi=maxf;
    var x6=document.getElementById('numericalbandwidth6');
-   var x60=document.getElementById('numericalbandwidth60');
-   x6.innerHTML=(hi-lo+0.091).toFixed(2);
-   x60.innerHTML=(hi-lo+0.551).toFixed(2);
+//   var x60=document.getElementById('numericalbandwidth60');
+   x6.innerHTML=(hi-lo+0.0).toFixed(2);
+//   x60.innerHTML=(hi-lo+0.0).toFixed(2);
    setfreq(freq);
 }
 
@@ -1040,9 +1084,26 @@ function soundappletstarted2()
    try { setsquelch(document.getElementById('squelchcheckbox').checked) } catch(e){};
    try { setautonotch(document.getElementById('autonotchcheckbox').checked) } catch(e){};
 
+   soundapplet.truefreqcallback = function(d,l) {
+      if (mode!="AMSYNC" && mode!="AMCOSTAS") return;
+      var s=(d/1000).toFixed(2); 
+      while (s.length<11) s=' '+s;
+      var s2=  s.substr(0,s.length-9) +'&hairsp;'+ s.substr(-9,3) +'&hairsp;'+ s.substr(-6,6);
+      document.getElementById('amsyncstatus').innerHTML=
+         s2+" Hz  "+
+         ((l==0)?'locked':(l==1)?'locking':'not locked');
+      var z=document.getElementById('amsyncstatus');
+      z.style.width='';
+      switch (l) {
+         case 0: z.style.backgroundColor='#00ff00'; break;
+         case 1: z.style.backgroundColor='#ff8800'; break;
+         case 2: z.style.backgroundColor='#ff0000'; break;
+      }
+   };
+   soundapplet.smetercallback = updatesmeter;
+
    test_serverbusy();
 }
-
 
 function waterfallappletstarted(id)
 {
@@ -1147,6 +1208,24 @@ function iOS_audio_start()
    try { s.start(0); } catch(e) { s.noteOn(0); }
 }
 
+function chrome_audio_start()
+{
+   // Chrome only plays webaudio after it has been started by clicking a button, so this function must be called from a button's onclick handler
+   if (!document.ct) document.ct= new webkitAudioContext();
+   var s = document.ct.createBufferSource();
+   s.connect(document.ct.destination);
+   document.ct.resume();
+   try { s.start(0); } catch(e) { s.noteOn(0);}
+}
+
+
+function set_buffer1(toggle)
+{
+  if (toggle) soundapplet.setdelay1(4000);
+  else soundapplet.setdelay1(1000);
+}
+
+
 function html5orjavamenu()
 {
    var s;
@@ -1163,13 +1242,17 @@ function html5orjavamenu()
    }
    sup_iOS = 0;   // global!
    sup_android = 0;   // global!
+   sup_chrome = 0;  // global!
    try { 
       var n=navigator.userAgent.toLowerCase();
       if (n.indexOf('iphone')!=-1) sup_iOS=1;
       if (n.indexOf('ipad')!=-1) sup_iOS=1;
       if (n.indexOf('ipod')!=-1) sup_iOS=1;
       if (n.indexOf('ios')!=-1) sup_iOS=1;
+      if (n.indexOf('ipados')!=-1) sup_iOS=1;
+      if (n.indexOf('macintosh')!=-1) sup_iOS=1;
       if (n.indexOf('android')!=-1) sup_android=1;
+      if (n.indexOf('chrome')!=-1) sup_chrome=1;
    } catch (e) {};
    if (sup_iOS) isTouchDev=true;
    var usecookie= readCookie('usejava');
@@ -1191,7 +1274,8 @@ function html5orjavamenu()
    else if (sup_socket && sup_mozaudio) s+='<span style="color: blue">';
    else s+='<span style="color: red">';
    s+='<input type="radio" name="groupa" value="HTML5" onclick="html5orjava(1,0);"'+(!usejavasound?" checked":"")+'>HTML5</span>';
-   if (sup_iOS && sup_socket && sup_webaudio) s+='<input type="button" value="iOS audio start" onclick="iOS_audio_start()">';
+   if (sup_iOS && sup_socket && sup_webaudio) s+='<input type="button" value=">> iOS audio start <<" onclick="iOS_audio_start()" style="background:#e74c3c; font-weight: bold">';
+   if (sup_chrome && sup_socket && sup_webaudio) s+='<input type="button" value=">> Chrome audio start <<" onclick="chrome_audio_start()" style="background:#e74c3c; font-weight: bold">';
    document.getElementById('html5choice').innerHTML = s;
    document.getElementById('record_span').style.display = usejavasound ? "none" : "inline";
 }
@@ -1224,6 +1308,16 @@ function bodyonload()
    document.getElementById("mutecheckbox").checked=false;
    document.getElementById("squelchcheckbox").checked=false;
    document.getElementById("autonotchcheckbox").checked=false;
+
+   if (document.referrer.match(/4chan.org/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/8ch.org/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/reddit.com/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/godlikeproductions.com/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/www.15min.lt/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/www.jeuxvideo.com/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/m.jeuxvideo.com/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/py7nm.blogspot.com/)) document.getElementById("chatboxspan").style.display="none";
+   if (document.referrer.match(/ruslekar.com/)) document.getElementById("chatboxspan").style.display="none";
 
    try { memories=JSON.parse(localStorage.getItem('memories')); } catch (e) {};
    if (!memories) memories=[];
@@ -1538,7 +1632,7 @@ function docmousedown(ev)
 
 var tprevwheel=0;
 var prevdir=0;
-var wheelstep=1000;
+var wheelstep=10000;
 function mousewheel(ev)
 {
    var fobj;
@@ -1613,11 +1707,11 @@ function keydown(e)
       case 74: freqstep(-st);                return cancelEvent(e);    // J
       case 39:                                                         // right arrow
       case 75: freqstep(st);                 return cancelEvent(e);    // K
-      case 65: setmf ('am',  -4  ,  4  );    return cancelEvent(e);    // A
-      case 70: setmf ('fm',  -8  ,  8  );    return cancelEvent(e);    // F
+      case 65: setmf ('am', -4.50, 4.50 );    return cancelEvent(e);    // A
+      case 70: setmf ('fm', -8,  8);    return cancelEvent(e);    // F
       case 67: setmf ('cw', -0.95, -0.55);   return cancelEvent(e);    // C
-      case 76: setmf('lsb', -3.0, -0.3);     return cancelEvent(e);    // L
-      case 85: setmf('usb',  0.3,  3.0);     return cancelEvent(e);    // U
+      case 76: setmf('lsb', -2.9, -0.20);     return cancelEvent(e);    // L
+      case 85: setmf('usb',  0.20,  2.9);     return cancelEvent(e);    // U
       case 90: if (e.shiftKey) wfset(2); else wfset(4); return cancelEvent(e);   // Z
       case 71: document.freqform.frequency.value=""; document.freqform.frequency.focus(); return cancelEvent(e);    // G
       case 66: if (e.shiftKey) setband((band-1+nbands)%nbands);        // B
@@ -1643,6 +1737,16 @@ function document_username()
     document.write('<a id="please"><span id="please1"><b><i>Please log in by typing your name or callsign here (it will be saved for later visits in a cookie):<\/i><\/b></span> ');
     document.write('<input type="text" value="" name="username" onchange="setusernamecookie()" onclick=""></a>');
   }
+}
+
+//Taken from F4KJI Olivier
+function in_array(needle, haystack){
+    var found = 0;
+    for (var i=0, len=haystack.length;i<len;i++) {
+        if (haystack[i] == needle) return i;
+            found++;
+    }
+    return -1;
 }
 
 
@@ -1714,7 +1818,7 @@ function document_waterfalls()
 
 function document_bandbuttons() {
     if (nvbands>1) {
-       document.write("<br>Band: ")
+       document.write("<br><b>Band:</b>")
        var i;
        for (i=0;i<nbands;i++) document.write ("<input type=\"radio\" name=\"group0\" value=\""+bandinfo[i].name+"\" onclick=\"setband("+i+")\">"+bandinfo[i].name+"\n");
     }
@@ -1848,6 +1952,17 @@ function chatnewline(s)
      o.innerHTML=o.innerHTML.replace(re,'<br>');
      return;
   }
+  // chatbox-anti-spam - replaces part of the chat string with new line...very raw but works - Maintained by ON5HB
+  var spam=s.toLowerCase();
+  if (spam.includes("v.ht/")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("fr49.ru/")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("worty.co/")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("ruslekar.com/")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("радиомагазин")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("hamradio.top/")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("bit.ly/")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+  if (spam.includes("PL-398BT")) {s="Automated Spammer Detection activated! Bye bye spamdude :-)";}
+
   // add line to chatbox
   o.innerHTML+='<br>'+s+'\n';
   o.scrollTop=o.scrollHeight;

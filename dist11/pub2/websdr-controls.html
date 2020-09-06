@@ -1,5 +1,29 @@
+<br>
+<hr>
+<div>
+<b>News:</b>
+<br>
+<table style="color:black; background-color:#FFFF99;" width="90%" height="50" style="float:left">
+<tr><td><small>23/09/2018 - <b>We have TeamSpeak as well and work with: <a href=ts3server://ts.heppen.be?port=9978>TeamSpeak3 Server Link</a></b> If the link doesn't work server: <b>ts.heppen.be:9978 </b></small></td></tr>
+<tr><td><small>09/01/2019 - Today 3 SDRplay SPR1A are in use, covering from 0-2, 2-4 and 5.3-7.3 MHz, if there are hickups please mail me.</small></td></tr>
+<tr><td><small>05/04/2019 - Programmed a spamfilter that shows "Spammer Detected! Bye Bye", this is to notify the spammer that he is noticed and removed. <b>Still do not click on any links in the chatbox if you are not sure!!</b></small></td></tr>
+<tr><td><small>15/06/2019 - Motherboard replaced with Q1900M 4x2GHz CPU, had some troubles to get it working, turned out speedstep was messing websdr up.</small></td></tr>
+<tr><td><small>15/11/2019 - Drivers finally fixed on bad sample quality, especially AM signals suffered. That was a hard nut to crack!</small></td></tr>
+<tr><td><small>21/03/2020 - Added start audio button for Chrome and iOS also included patches for new iOS devices.</small></td></tr>
+<tr><td><small>29/03/2020 - G5RV came down this morning due to strong winds. 30/03/2020 Has been fixed. Antenna is up again, even higher then before.</small></td></tr>
+<tr><td><small>20/04/2020 - We now have more notches and a dsp-noise-reduction, but beware your computer must have a fast CPU. Thanks to Clint from Utah websdr.</small></td></tr>
+<tr><td><small>25/06/2020 - 0-2MHz is now an SDRplay RSP2 thanks to AD PB9E. <b>Thanks a lot Ad!!</b></small></td></tr>
+<tr><td><small>08/08/2020 - <b>PocketRxTx is no longer supported as it's not legal and not approved by Pieter-Tjerk</b></small></td></tr>
+<tr><td><small></small></td></tr>
+<tr><td><small>Don't be shy, please let us know your name and call in the box below, thanks.</small></td></tr>
+</table>
+</div>
+<br>
+<hr>
 
-
+<!-- Chatbox -->
+<div id="chatboxspan">
+<b>Chatbox:</b>
 
 <form name="usernameform" action="#">
 <script type="text/javascript">
@@ -8,6 +32,18 @@ document_username();
 <input type="text" size=1 name="dummytopreventsubmissiononenter" style="display:none" onclick="">
 </form>
 
+<span style="font-size:80%">
+This chatbox is intended to discuss the operation of the WebSDR or <u>chat between other users</u>, please keep it nice.
+<br>
+The operators of this site disclaim any responsibility for text appearing in this chatbox. It stores a cookie on your system only for this website that holds your name and call.
+</span>
+<div id="chatboxnew" style="color:black; background-color:#c0ffff; overflow:auto; height:250px; width:90%; font-family: monospace"></div>
+<br>
+<form name="chatform" onsubmit="return sendchat()" action="#">
+<input type="text" size=80 name="chat" onclick="">
+<input type="button" value="chatbox submit" onclick="return sendchat()">
+</form>
+</div>
 
 <div id="dummyforie"></div>
 <a href="m.html">
@@ -76,47 +112,81 @@ Your browser does not seem to support HTML5 WebAudio; please try a recent versio
 
 <!--Fix preset-->
 <form name="presets" action="#">
+  <div style="position:relative" class=clear>
   <div class="ctl">
      <b>160m:</b>
-     <input type="button" title="1850 LSB" value="1850" onclick="setfreqif(1850); setmf('lsb',-3.0,-0.2);"> 
-     <input type="button" title="1933 LSB" value="1933" onclick="setfreqif(1933); setmf('lsb',-3.0,-0.2);"> 
-     <input type="button" title="1942 LSB" value="1942" onclick="setfreqif(1942); setmf('lsb',-3.0,-0.2);"> 
-     <input type="button" title="1977 AM" value="1977" onclick="setfreqif(1977); setmf('am',-4,4);">
+     <input type="button" title="Calling Freq" value="1850" onclick="setfreqif(1850); setmf('lsb',-2.90,-0.20);"> 
+     <input type="button" title="English 1933" value="1933" onclick="setfreqif(1933); setmf('lsb',-2.90,-0.20);"> 
+     <input type="button" title="English 1942" value="1942" onclick="setfreqif(1942); setmf('lsb',-2.90,-0.20);"> 
   </div>
 
   <div class="ctl">
     <b>80m:</b>
-    <input type="button" title="Day" value="3625" onclick="setfreqif(3625); setmf('lsb',-3.0,-0.2);">
-    <input type="button" title="NTA" value="3630" onclick="setfreqif(3630); setmf('lsb',-3.0,-0.2);">
-    <input type="button" title="NL Coastguard" value="3673" onclick="setfreqif(3673); setmf('usb',0.2,3.0);"> 
-    <input type="button" title="WAB" value="3760" onclick="setfreqif(3760); setmf('lsb',-3.0,-0.2);">   
+    <input type="button" title="CW QRQ Point" value="3567" onclick="setfreqif(3567.75); setmf('cw',-0.95, -0.55);">
+    <input type="button" title="Belgie OchtendNet" value="3609" onclick="setfreqif(3609); setmf('lsb',-2.90,-0.20);">
+    <input type="button" title="Nederlandstalig Overdag" value="3625" onclick="setfreqif(3625); setmf('lsb',-2.90,-0.20);">
+    <input type="button" title="Nederlandstalig Avond" value="3630" onclick="setfreqif(3630); setmf('lsb',-2.90,-0.20);">
+    <input type="button" title="SRS AMnet" value="3705" onclick="setfreqif(3705); setmf('am',-3.00,3.00);">
+    <input type="button" title="Aachener Runde - Samstag" value="3722" onclick="setfreqif(3722); setmf('lsb',-2.90,-0.20);">
   </div>
 
   <div class="ctl">
-    <b>2m:</b>
-    <input type="button" title="Heist op den Berg" value="ON0ZK" onclick="setfreqif(145637.5); setmf('fm',-5.0,5.0);">
-    <input type="button" title="Peer" value="ON0NL" onclick="setfreqif(145662.5); setmf('fm',-5.0,5.0);">
-    <input type="button" title="Diest" value="ON0DST" onclick="setfreqif(145712.5); setmf('fm'-5.0,5.0);"> 
-    <input type="button" title="Vreren" value="ON0LB" onclick="setfreqif(145775); setmf('fm',-5.0,5.0);">   
-    <input type="button" title="Utrecht" value="PI3UTR" onclick="setfreqif(145575); setmf('fm',-5.0,5.0);">
-
+    <b>60m:</b>
+    <input type="button" title="DX" value="5354" onclick="setfreqif(5354); setmf('usb',0.20,2.90);">
+    <input type="button" title="Dutch" value="5363" onclick="setfreqif(5363); setmf('usb',0.20,2.90);">
   </div>
 
-
-
+  <div class="ctl">
+     <b>40m:</b>
+     <input type="button" title="40m ronde dutch speaking 12.30-13h localtime" value="7067" onclick="setfreqif(7067); setmf('lsb',-2.90,-0.20);">
+     <input type="button" title="Dutch" value="7077" onclick="setfreqif(7077); setmf('lsb',-2.90,-0.20);">
+     <input type="button" title="DX" value="7179" onclick="setfreqif(7179); setmf('lsb',-2.90,-0.20);">
+   </div>
 </form>
+
 <!--End Presets form-->
+
+<!--Broadcaststation preset-->
+<form name="presets" action="#">
+ <div style="position:relative" class=clear>
+  <div class="ctl">
+     <b>Broadcast:</b>
+     <input type="button" title="Absolute" value="Absolute" onclick="setfreqif(1215); setmf('am',-4.50,4.50);"> 
+     <input type="button" title="BBC4" value="BBC4" onclick="setfreqif(198); setmf('am',-4.50,4.50);">
+     <input type="button" title="BBC Scotland" value="BBC Scotland" onclick="setfreqif(810); setmf('am',-4.50,4.50);">
+     <input type="button" title="BBC Ulster" value="BBC Ulster" onclick="setfreqif(1341); setmf('am',-4.50,4.50);">
+     <input type="button" title="BBC Wales" value="BBC Wales" onclick="setfreqif(882); setmf('am',-4.50,4.50);">
+     <input type="button" title="Caroline" value="Caroline" onclick="setfreqif(648); setmf('am',-4.50,4.50);"> 
+     <input type="button" title="Channel292" value="Channel292" onclick="setfreqif(6070); setmf('am',-4.50,4.50);">
+     <input type="button" title="Gold UK" value="Gold UK" onclick="setfreqif(1548); setmf('am',-4.50,4.50);">
+     <input type="button" title="Lyca London UK" value="Lyca UK" onclick="setfreqif(1458); setmf('am',-4.50,4.50);">
+     <input type="button" title="RTL International French Speaking" value="RTL FR" onclick="setfreqif(234); setmf('am',-4.50,4.50);">
+  </div>
+</form>
+
+<form name="presets" action="#">
+ <div style="position:relative" class=clear>
+  <div class="ctl">
+     <b>Others:</b>
+     <input type="button" title="Santa Maria Oceanic Air-Control" value="Azores" onclick="setfreqif(3491); setmf('usb',0.20,2.90);">
+     <input type="button" title="Ney York - Gander Volmet meteo" value="NewYork" onclick="setfreqif(3485); setmf('usb',0.20,2.90);">
+     <input type="button" title="Oostende coastgard messages" value="Oostende" onclick="setfreqif(2761); setmf('usb',0.20,2.90);"> 
+     <input type="button" title="RAF Military 1 meteo" value="RAF" onclick="setfreqif(5450); setmf('usb',0.20,2.90);">	
+     <input type="button" title="Shannon Volmet meteo 3413KHz" value="Shannon3" onclick="setfreqif(3413); setmf('usb',0.20,2.90);">
+     <input type="button" title="Shannon Volmet meteo 5505KHz" value="Shannon5" onclick="setfreqif(5505); setmf('usb',0.20,2.90);">
+     <input type="button" title="Shanwick Air-control" value="Shanwick" onclick="setfreqif(6547); setmf('usb',0.20,2.90);"> 
+     <input type="button" title="Holland coastgard messages" value="Scheveningen" onclick="setfreqif(3673); setmf('usb',0.20,2.90);">
+  </div>
+</form>
 
 <!--S-meter-->
 <form name="freqform" action="#" onsubmit="setfreqif(this.frequency.value); return false;">
  <div style="position:relative" class=clear>
- <div style="position:relative" class=clear>
  <div id="newline">
  <div class="ctl">
-  <div class="hideblind">
-    <div style="width:250px;background-color:black;">
+    <div style="width:260px;background-color:black;">
     <br>
-    <div id="smeterpeak" style="width:100px;height:22px;background-color:#0040ff;position:absolute;">
+    <div id="smeterpeak" style="width:100px;height:22px;background-color:#0004ff;position:absolute;">
       <div style="position:absolute;width:0px;height:0px;"></div>
     </div>
     <div id="smeterbar" style="width:100px;height:22px;background-color:#b3ffff;position:absolute;">
@@ -125,33 +195,48 @@ Your browser does not seem to support HTML5 WebAudio; please try a recent versio
     <br>
     <img src="smeter1-blauw.png" style="width:240px" alt="[scale]">
     <br>
-    </div>
   </div>
-  <span id="numericalsmeter">?</span> dB;
-  peak
-  <span id="numericalsmeterpeak">?</span> dB;
+  <b>Peak:</b>
+  <span id="numericalsmeter">?</span>dB
+  <b>Average:</b>
+  <span id="numericalsmeterpeak">?</span>dB
   <br>
 
 <!--Audio recording mute squelsch -->
-  <input id="mutecheckbox" title="disable sound" type="checkbox" value="" onclick="setmute(this.checked)">mute
-  <input id="squelchcheckbox" title="block noise if no signal" type="checkbox" value="" onclick="setsquelch(this.checked)">squelch
-  <input id="autonotchcheckbox" title="automatically filter out interfering carrier (beep/whistle)" type="checkbox" value="" onclick="setautonotch(this.checked)">autonotch
+  <input id="mutecheckbox" title="disable sound" type="checkbox" value="" onclick="setmute(this.checked)">Mute
+  <input id="squelchcheckbox" title="block noise if no signal" type="checkbox" value="" onclick="setsquelch(this.checked)">Squelch
   <br>
+  <input id="autonotchcheckbox" title="automatically filter out interfering carrier (beep/whistle)" type="checkbox" value="" onclick="setautonotch(this.checked)">Notch1
+  <input id="notch2checkbox" title="Audio-only autonotch filter capable of handling multiple tones- will not prevent desense from very strong carriers - may be used with Notch1" type="checkbox" value="" onclick="setnotch2(this.checked)">Notch2
+  <input id="hiboostcheckbox" title="6dB high frequency boost with knee centered at 1500 Hz - Use with DSP noise reduction and/or to improve intelligibility of speech" type="checkbox" value="" onclick="sethighboost(this.checked)">HighBoost
+  <hr>
+  DSP Noise Reduction:
+  <select id="nrcheckbox" onchange="setlmsnr(this.value)" title="DSP Noise reduction to reduce background hiss and white noise - Higher settings cause more artifacts.">
+     <option selected value=0>Off</option>
+     <option value=1>Low</option>
+     <option value=2>Medium</option>
+     <option value=3>High</option>
+     <option value=4>Strong</option>
+   </select>
+  <hr>
   <span id="volumecontrol" style="white-space:nowrap; width:50%">
-    Volume:
+   Volume:
     <input type="range" min="-20" max="6" id="volumecontrol2" name="volume" value="0" step="1"
     oninput="soundapplet.setvolume(Math.pow(10,this.value/10.))"
     onchange="soundapplet.setvolume(Math.pow(10,this.value/10.))">
   </span>
+
+  <br>
   <div id="record_span" style="display:none">
-    <hr>
-    <b>Audio recording: </b>
+  <hr>
+    <b>Record stream: </b>
     <button id="recbutton" onclick="record_click(); return false">start</button>
     <span id="reccontrol"></span>
     <br>
     <div id="recwarning" style="width:300px; display:none; font-size:-1; color:red">Your browser does not seem to support downloading the recording; please try a recent version of Firefox, Chrome or Opera.</div>
   </div>
   <hr>
+
     <b>Signal strength plot:</b>
     <select id="sgraphchoice">
       <option value=0>none</option>
@@ -164,84 +249,87 @@ Your browser does not seem to support HTML5 WebAudio; please try a recent versio
     <canvas id="sgraph" style="width:100%; display:none;"></canvas>
   </div>
 </div>
+</form>
 
 <div class="ctl">
   <b>Frequency:</b>
-  <span class="showblind">
-  <input id="freqstepm3" type="button" value="<5kHz" onclick="setfreq(freq-5.0)">
-  <input type="button" value="<1kHz" onclick="setfreq(freq-1.0)">
-  <input type="button" value="<100Hz" onclick="setfreq(freq-0.1)">
-  <input type="button" value="<10Hz" onclick="setfreq(freq-0.01)">
-  </span>
-  <input type="text" size=10 name="frequency" onkeyup="setfreqif_fut(this.value);"> kHz
+  <input type="text" size=10 name="frequency" style="font-size:100%; font-weight:bold" onkeyup="setfreqif_fut(this.value)"> kHz
   <input type="submit" style="position:absolute; left:-999px" value="submit">  <!-- IE sillyness; other browsers are fine with visibility:none -->
-  <span class="hideblind">
-  <br>
-  <input type="button" value="<5kHz" onclick="setfreq(freq-5.0)">
-  <input type="button" value="<1kHz" onclick="setfreq(freq-1.0)">
-  <input type="button" value="<100Hz" onclick="setfreq(freq-0.1)">
-  <input type="button" value="<10Hz" onclick="setfreq(freq-0.01)">
+  <span>
+    <br>
+    <input type="button" value="<10" onclick="setfreq(freq-10.0)">
+    <input type="button" value="<5" onclick="setfreq(freq-5.0)">
+    <input type="button" value="<1" onclick="setfreq(freq-1.0)">
+    <input type="button" value="<0.1" onclick="setfreq(freq-0.1)">
+    <input type="button" value="<0.01" onclick="setfreq(freq-0.01)">
+    <!-- Added button to snap to nearest integer khz frequency - 20180214  KA7OEI -->    
+    <input type="button" value="0-fix" onclick="freqstep(9)">
+    <input type="button" value="0.01>" onclick="setfreq(freq+0.01)">
+    <input type="button" value="0.1>" onclick="setfreq(freq+0.1)">
+    <input type="button" value="1>" onclick="setfreq(freq+1.0)">
+    <input type="button" value="5>" onclick="setfreq(freq+5.0)">
+    <input type="button" value="10>" onclick="setfreq(freq+10.0)">
   </span>
-  <input type="button" value=">10Hz" onclick="setfreq(freq+0.01)">
-  <input type="button" value=">100Hz" onclick="setfreq(freq+0.1)">
-  <input type="button" value=">1kHz" onclick="setfreq(freq+1.0)">
-  <input type="button" value=">5kHz" onclick="setfreq(freq+5.0)">
 
   <script type="text/javascript"> document_bandbuttons(); </script>
-  <div class="hideblind">
-  <br>
+  <br>  
+  <span class="hideblind">
   <span style="font-size:65%">Or tune by clicking/dragging/scrollwheel on the frequency scale.</span>
-  <br>
+  </span>
   <hr>
-  </div>
-<!--/div>   -->
+
+<!-- </div> -->
 <!--/form>  -->
 
 <!--div class="ctl">  -->
   <b>Bandwidth: </b>
-  <br>
-  <b><span id="numericalbandwidth6">?</span></b> kHz @ -6dB;
-  <b><span id="numericalbandwidth60">?</span></b> kHz @ -60dB.
+  <span id="numericalbandwidth6">?</span> kHz
+<!--  <b><span id="numericalbandwidth60">?</span></b> kHz @ -60dB. -->
   <br>
   <table>
     <tr>
     <td><input type="button" value=">narrower<" onclick="lo+=0.03125; hi-=0.03125; updbw();"></td>
     <td><input type="button" value="<wider>"   onclick="lo-=0.03125; hi+=0.03125; updbw();"></td>
-    <td><input type="button" value="<lower" onclick="lo-=0.03125; hi-=0.0; updbw();"></td>
-    <td><input type="button" value="lower>" onclick="lo+=0.03125; hi+=0.0; updbw();"></td>
-    <td><input type="button" value="<upper" onclick="lo+=0.0; hi-=0.03125; updbw();"></td>
-    <td><input type="button" value="upper>" onclick="lo-=0.0; hi+=0.03125; updbw();"></td>
+    <td><input type="button" value="<left" onclick="lo-=0.03125; hi-=0.0; updbw();"></td>
+    <td><input type="button" value="left>" onclick="lo+=0.03125; hi+=0.0; updbw();"></td>
+    <td><input type="button" value="<right" onclick="lo+=0.0; hi-=0.03125; updbw();"></td>
+    <td><input type="button" value="right>" onclick="lo-=0.0; hi+=0.03125; updbw();"></td>
     </tr>
     <tr>
-    <td><input type="button" value="<shift<" onclick="lo-=0.03125; hi-=0.03125; updbw();"></td>
-    <td><input type="button" value=">shift>" onclick="lo+=0.03125; hi+=0.03125; updbw();"></td>
+    <td><input type="button" value="<move<" onclick="lo-=0.03125; hi-=0.03125; updbw();"></td>
+    <td><input type="button" value=">move>" onclick="lo+=0.03125; hi+=0.03125; updbw();"></td>
     </tr>
   </table>
-    <hr>
-    <b>Modulation: </b>
-  <table>
-    <tr>
-    <td><input type="button" value="CW-wide" onclick="setmf ('cw', -0.95, -0.55);"></td>
-    <td><input type="button" value="LSB"     onclick="setmf('lsb', -3.0, -0.2);"></td>
-    <td><input type="button" value="USB"     onclick="setmf('usb',  0.2,  3.0);"></td>
-    <td><input type="button" value="AM"      onclick="setmf ('am',  -4  ,  4  );"></td>
-    <td><input type="button" value="FM"      onclick="setmf ('fm',  -8  ,  8  );"></td>
-    </tr>
-    <tr>
-    <td><input type="button" value="CW-narrow" onclick="setmf('cw',-0.78, -0.72);"></td>
-    <td><input type="button" value="LSB-nrw"  onclick="setmf('lsb', -2.2, -0.5);"></td>
-    <td><input type="button" value="USB-nrw"  onclick="setmf('usb',  0.5,  2.2);"></td>
-    <td><input type="button" value="AM-nrw"   onclick="setmf ('am', -2.0,  2.0);"></td>
-    <td><input type="button" value="LSB-Rolf" onclick="setmf ('lsb', -2.6,  -0.3);"></td>
-    </tr>
-  </table>
+
   <span class="hideblind">
   <span style="font-size:65%">Or drag the passband edges on the frequency scale.</span>
   </span>
   <hr>
+
+    <b>Modulation: </b>
+  <table>
+    <tr>
+    <td><input type="button" value="CW" onclick="setmf ('cw', -0.95, -0.55);"></td>
+    <td><input type="button" value="LSB"     onclick="setmf('lsb', -2.90, -0.20);"></td>
+    <td><input type="button" value="USB"     onclick="setmf('usb', 0.20, 2.90);"></td>
+    <td><input type="button" value="AM"      onclick="setmf ('am', -4.50, 4.50);"></td>
+    <td><input type="button" value="AM-sync"   onclick="setmf ('amsync', -4.50 , 4.50);"></td>
+    <td><input type="button" value="AM-up"   onclick="setmf ('am', 0.00, 4.50);"></td>
+    <td><input type="button" value="FM"      onclick="setmf ('fm', -8.00, 8.00);"></td>
+    </tr>
+    <tr>
+    <td><input type="button" value="CW-nrw" onclick="setmf('cw',-0.78, -0.72);"></td>
+    <td><input type="button" value="LSB-nrw"  onclick="setmf('lsb', -2.20, -0.20);"></td>
+    <td><input type="button" value="USB-nrw"  onclick="setmf('usb', 0.20,  2.20);"></td>
+    <td><input type="button" value="AM-nrw"   onclick="setmf ('am', -2.50, 2.50);"></td>
+    <td><input type="button" value="AM-nsync"   onclick="setmf ('amsync', -3.00, 3.00);"></td>
+    <td><input type="button" value="AM-down"   onclick="setmf ('am', -4.50, 0.00);"></td>
+    <td><input type="button" value="FM-nrw"      onclick="setmf ('fm', -4.50, 4.50);"></td>
+    </tr>
+  </table>
+  <hr>
   <b>Memories:</b>
   <div id="memories" class="memories"></div>
-
 </div>
 
 <div class="hideblind">
@@ -266,26 +354,22 @@ Your browser does not seem to support HTML5 WebAudio; please try a recent versio
     </td></tr>
     <tr><td>
     Speed:
-    <select id="wfspeed" onchange="waterfallspeed(this.value)">
-      <option value="30">super slow</option>
-      <option value="10">very slow</option>
+    <select id="wfspeed" class="wfctl" onchange="waterfallspeed(this.value)">
       <option value="4">slow</option>
       <option value="2">medium</option>
       <option value="1">fast</option>
     </select>
     <br>
     Size:
-    <select id="wfsize" onchange="waterfallheight(this.value)">
+    <select id="wfsize" class="wfctl" onchange="waterfallheight(this.value)">
       <option value="50">small</option>
       <option selected value="100">medium</option>
       <option value="200">large</option>
       <option value="400">larger</option>
-      <option value="600">huge</option>
-      <option value="2">off? :-)</option>
     </select>
     <br>
     View:
-    <select id="wfmode" onchange="waterfallmode(this.value)">
+    <select id="wfmode" class="wfctl" onchange="waterfallmode(this.value)">
       <option value="0">spectrum</option>
       <option selected value="1">waterfall</option>
       <option value="2">weak sigs</option>
@@ -295,14 +379,24 @@ Your browser does not seem to support HTML5 WebAudio; please try a recent versio
     <tr><td>
 <script type="text/javascript"> if (dxinfoavailable) document.write('<input type="checkbox" name="hidedx" value="" onclick="sethidedx(this.checked)">Hide labels'); </script>
     </td></tr>
+
+    <tr><td>
+	<label class="onesetting" for="extrabuffer1checkbox">
+	<input id="extrabuffer1checkbox" type="checkbox" value="" onclick="set_buffer1(this.checked)">Extra audio buffer
+	</label>
+	<div></div>
+	<script>
+	document.getElementById('extrabuffer1checkbox').checked=false;
+	</script>
+     </td></tr>
+
+
   </table>
 </div>
 </div>
 
 
-
-
-<!--
+<!-- Logbook section
 <div class="ctl">
   <b>Logbook:</b>
   <form name="logform" action="#">
@@ -322,43 +416,58 @@ Your browser does not seem to support HTML5 WebAudio; please try a recent versio
 
 <br style="clear:both">
 <hr>
+</div>
 
-
-<form name="form1" action="#">
+<!-- users online -->
+<form name="form1" action="#" >
 This WebSDR is currently being used by <span id=numusers>?</span> user(s) simultaneously:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input id="compactviewcheckbox" type="checkbox" name="compactview" value="" onclick="setcompactview(this.checked)">compact view
 <br>
 <div id=users></div>
 </form>
-<hr>
-
-<div id="chatboxspan">
-<p><b>Chatbox:</b><br>
-<span style="font-size:80%">
-This chatbox is intended to discuss the operation of the WebSDR.
-<br>
-The operators of this site disclaim any responsibility for text appearing in this chatbox.
-</span>
-<div id="chatboxnew" style="background-color:#c0ffff; overflow:auto; height:250px; width:90%; font-family: monospace"></div>
-<br>
-<form name="chatform" onsubmit="return sendchat()" action="#">
-<input type="text" size=80 name="chat" onclick="">
-<input type="button" value="chatbox submit" onclick="return sendchat()">
-</form>
-<br>
-</div>
 
 <hr>
 <div style="font-size:80%">
-Statistics:
+<b>Statistics:</b>
 <div id="stats"></div>
 </div>
 
-
-
 <hr>
 
-<div id="soundappletdiv"></div>
+<!--Extra controls -->
+<div class="ctl" title="Various extra audio options that most people do not need. Best left alone of you do not know what you are doing. Also, they are a bit buggy.">
+  <b>Audio controls:</b>
 
-<!----Took a bunch of code from other SDR.org websites, hope you don't mind ---->
+  <br>
+      Audio out:
+      <input type="radio" id="au-out-left" name="au-out" value="left" onchange="if (soundapplet) soundapplet.setstereo(0)">left
+      <input type="radio" id="au-out-both" name="au-out" value="mono" checked onchange="if (soundapplet) soundapplet.setstereo(-1)">both
+      <input type="radio" id="au-out-right" name="au-out" value="right" onchange="if (soundapplet) soundapplet.setstereo(1)">right
+   <br>
+      Gain control:
+      <input type="radio" class="tog1" id="agc-auto" name="agc-onoff" value="automatic" checked onchange="if (soundapplet) soundapplet.setparam('gain=10000')">automatic
+      <input type="radio" class="tog2" id="agc-manu" name="agc-onoff" value="manual" onchange="if (soundapplet) soundapplet.setparam('gain='+document.getElementById('manualgain').value); maxorman='';">manual
+      <input type="radio" id="agc-max" name="agc-onoff" value="limit" onchange="if (soundapplet) soundapplet.setparam('maxgain='+document.getElementById('manualgain').value); maxorman='max';">limit
+   <br>
+      Gain:
+      <input style="width:350px;" title="manually set gain; usually the automatic setting is much more convenient" type="range" min="-100" max="40" id="manualgain" name="manualgain" value="0" step=".1"
+          oninput="if (soundapplet) soundapplet.setparam(maxorman+'gain='+this.value)";
+          onchange="if (soundapplet) soundapplet.setparam(maxorman+'gain='this.value)";>
+      <br>
+      Hang time:
+      <input type="range" min="0" max="4" id="agchangtime" name="agchangtime" title="how long until gain increases after end of a transmission" value="0" step=".01" 
+          oninput="if (soundapplet) soundapplet.setparam('agchang='+this.value)";
+          onchange="if (soundapplet) soundapplet.setparam('agchang='this.value)";>
+  <br>
+<br>
+
+<div id="soundappletdiv" style="color:black"></div>
+</div>
+
+<left>
+<br>
+<a href="http://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="http://www.hamqsl.com/solar101vhfper.php"></a>
+<br>
+<iframe src="http://free.timeanddate.com/clock/i6ykhqp8/tlbe/fn6/fs16/fcff0/tc000/ftb/pa8/tt0/th1/ta1/tb4" frameborder="0" width="308" height="54"></iframe>
+</left>
 

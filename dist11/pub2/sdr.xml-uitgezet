@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sdr>
+	<station>
+		<!-- General station info -->
+		<callsign>BELGIUM</callsign>
+		<locator>JO21oc</locator>
+		<!-- WebSDR server version -->
+		<version>11</version>
+		<!-- a link to a page where you can find more info about that WebSDR server -->
+		<about>http://www.heppen.be:8091</about>
+		<!-- a jpg representing server, 480x320 pixels -->
+		<picture>http://www.heppen.be:8091/belgium.png</picture>
+		<!-- a jpg representing station logo, 128x128 pixels -->
+		<logo>http://www.heppen.be:8091/belgium.png</logo>
+		<message>Update the application to version 0.7.1-7 if no sound.</message>
+	</station>
+	<band>
+		<nr>0</nr>
+		<name>0-2MHz</name>
+		<fmin>0</fmin>
+		<fmax>2048000</fmax>
+	</band>
+	<band>
+		<nr>1</nr>
+		<name>2-4MHz</name>
+		<fmin>2048000</fmin>
+		<fmax>4096000</fmax>
+	</band>
+	<band>
+		<nr>2</nr>
+		<name>5.3-7.3MHz</name>
+		<fmin>5300000</fmin>
+		<fmax>7348000</fmax>
+	</band>
+        <band>
+		<nomore></nomore>
+	</band>
+</sdr>

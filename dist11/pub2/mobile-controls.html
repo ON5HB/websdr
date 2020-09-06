@@ -56,10 +56,15 @@ color:red; font-weight:bold; border:2px; border-style:solid; border-color:black;
 Your browser is not supported; if it does not work, please try again with Firefox on Android, or Safari version 6 or later on iOS.</div>
 </div>
 
+<div id="chromewarning" class="warning">
+Mobile support of Chrome may be buggy; If there are problems, try a different browser.</div>
+</div>
+
 <form name="freqform" action="#" onsubmit="freqsubmit(this); return false;"
 ><script>
 var sup_android=false;
 var sup_iOS=false;
+var sup_chrome=false;
 try { 
    var n=navigator.userAgent.toLowerCase();
    if (n.indexOf('android')!=-1) sup_android=true;
@@ -67,9 +72,15 @@ try {
    if (n.indexOf('ipad')!=-1) sup_iOS=true;
    if (n.indexOf('ipod')!=-1) sup_iOS=true;
    if (n.indexOf('ios')!=-1) sup_iOS=true;
+   if (n.indexOf('ipados')!=-1) sup_iOS=true;
+   if (n.indexOf('macintosh')!=-1) sup_iOS=true;
+   if (n.indexOf('chrome')!=-1) sup_chrome=true;
 } catch (e) {};
 if (sup_iOS) document.write('<div id="iOSstart"><button onclick="iOS_audio_start()">iOS audio start</button><br></div>');
-if (sup_android && (n.indexOf('firefox')==-1)) document.getElementById("browserwarning").style.display= "block";
+if (sup_chrome) document.write('<div id="Chromestart"><button onclick="Chrome_audio_start()">Chrome audio start</button><br></div>');
+if (sup_android && (n.indexOf('firefox')==-1) && (n.indexOf('chrome')==-1)) document.getElementById("browserwarning").style.display= "block";
+if (sup_android && sup_chrome) document.getElementById("chromewarning").style.display= "block";
+
 </script
 ><input type="number" name="frequency" step="any" onFocus="freqfocus=true; this.value=''" onBlur="freqfocus=false;" class="freqbar" style="display:inline-block; width:60%;" /
 ><div class="freqinfo1"><div class="freqinfo2" id="freqinfo"></div></div
@@ -79,6 +90,11 @@ if (sup_android && (n.indexOf('firefox')==-1)) document.getElementById("browserw
   <option value="CW">CW</option>
   <option value="AM">AM</option>
   <option value="FM">FM</option>
+  <option value="USBN">USB-nrw</option>
+  <option value="LSBN">LSB-nrw</option>
+  <option value="CWN">CW-nrw</option>
+  <option value="AMN">AM-nrw</option>
+  <option value="FMN">FM-nrw</option>
 </select
 ></form
 ><div style="font-size:0px"><canvas id="ax" height="21px"></canvas></div><div id="wfdiv" class="upsidedown"></div
@@ -156,9 +172,10 @@ document.getElementById('extrabuffer2checkbox').checked=false;
 
 var isTouchDev=true;
 var freq=bandinfo[0].centerfreq;
-var mode="AM";
-var hi=3.5;
-var lo=-3.5;
+var freq=3609;
+var mode="LSB";
+var hi=-0.2;
+var lo=-2.80;
 var band=0;
 var soundapplet=null;
 var smeter;
@@ -207,6 +224,21 @@ function iOS_audio_start()
    document.getElementById("iOSstart").innerHTML="";
 }
 
+function Chrome_audio_start()
+{
+   // Chrome only plays webaudio after it has been started by clicking a button, so this function must be called from a button's onclick handler
+   if (!document.ct) document.ct= new webkitAudioContext();
+   var s = document.ct.createBufferSource();
+   s.connect(document.ct.destination);
+   document.ct.resume();
+   try { s.start(0); } catch(e) { s.noteOn(0); }
+   document.getElementById("Chromestart").innerHTML="";
+}
+
+function chromesupporterror()
+{
+   document.getElementById("chromewarning").style.display= "block";
+}
 
 var serveravailable=-1;  // -1 means yet to be tested, 0 and 1 mean false and true
 
@@ -278,17 +310,22 @@ function send_soundsettings_to_server()
 {
    var m=mode;
    if (m=="USB") m=0;
+   else if (m=="USBN") m=0;
    else if (m=="LSB") m=0;
+   else if (m=="LSBN") m=0;
    else if (m=="CW") m=0;
+   else if (m=="CWN") m=0;
    else if (m=="AM") m=1;
+   else if (m=="AMN") m=1;
    else if (m=="FM") m=4;
+   else if (m=="FMN") m=4;
       soundapplet.setparam(
           "f="+freq
          +"&band="+band
          +"&lo="+lo
          +"&hi="+hi
          +"&mode="+m
-         +"&name=mobile"+(sup_iOS?"/iOS":sup_android?"/Android":"")
+         +"&name=Mobile"+(sup_iOS?"-iOS":sup_android?"-Android":"")
          );
 }
 
@@ -338,11 +375,16 @@ function setmode_sel(sel)
 {
    mode=sel.options[sel.selectedIndex].value;
    switch (mode) {
-      case "AM": lo=-3.5; hi=3.5; break;
-      case "FM": lo=-7; hi=7; break;
+      case "AM": lo=-5.00; hi=5.00; break;
+      case "AMN": lo=-3; hi=3; break;
+      case "FM": lo=-8; hi=8; break;
+      case "FMN": lo=-4.25; hi=4.25; break;
       case "CW": lo=0.55; hi=0.95; break;
-      case "USB": lo=0.3; hi=2.7; break;
-      case "LSB": lo=-2.7; hi=-0.3; break;
+      case "CWN": lo=0.72; hi=0.78; break;
+      case "USB": lo=0.20; hi=2.80; break;
+      case "USBN": lo=0.5; hi=2.2; break;
+      case "LSB": lo=-2.8; hi=-0.20; break;
+      case "LSBN": lo=-2.2; hi=-0.5; break;
    }
    document.freqform.frequency.value=nominalfreq().toFixed(2);  // because modechange might change nominalfrequency
    send_soundsettings_to_server();
@@ -352,7 +394,7 @@ function setmode_sel(sel)
 function freqstep(st)
 // do a frequency step, suitable for the current mode
 {
-   var steps_ssb= [bandinfo[band].tuningstep, 0.5, 2.5 ];
+   var steps_ssb= [bandinfo[band].tuningstep, 1, 5 ];
    var steps_am5= [0.1, 1, 5];
    var steps_am9= [0.1, 1, 9];
    var steps_fm= [1, 5, 12.5 ];

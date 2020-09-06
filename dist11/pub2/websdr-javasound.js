@@ -16,10 +16,20 @@ function make_javasound()
       this['smeter'] = function () { return sa.smeter; }
       this['getid'] = function () { return sa.getid(); }
       this['setvolume'] = function (v) { sa.setvolume(v); }
-      this['destroy'] = function() { sa.destroy(); }
+      this['destroy'] = function() { 
+            try { clearInterval(interval_updatesmeter); } catch (e) {} ;
+            sa.destroy(); 
+         }
       this['javaversion'] = function() { sa.javaversion(); }
       this['app'] = sa;
    } catch (e) {};
+
+   var interval_updatesmeter;
+   var that=this;
+   interval_updatesmeter = setInterval(
+      function() { if (that['smetercallback']) { that['smetercallback'](sa.smeter); } }
+      ,100);
+
 }
 
 
