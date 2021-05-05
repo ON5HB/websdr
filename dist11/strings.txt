@@ -1,0 +1,3738 @@
+/lib64/ld-linux-x86-64.so.2
+|5Btu
+libm.so.6
+__gmon_start__
+_Jv_RegisterClasses
+libfftw3f.so.3
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+_init
+_fini
+libpng12.so.0
+libasound.so.2
+libcrypto.so.1.0.0
+fftwf_import_wisdom_from_file
+fftwf_export_wisdom_to_file
+erfc
+sqrt
+snd_pcm_open
+snd_pcm_hw_params_malloc
+snd_pcm_hw_params_any
+snd_pcm_hw_params_set_access
+snd_pcm_hw_params_set_format
+snd_pcm_hw_params_set_rate
+snd_pcm_hw_params_set_channels
+snd_pcm_hw_params_set_buffer_size_near
+snd_pcm_hw_params_set_period_size_near
+snd_pcm_hw_params
+snd_pcm_sw_params_malloc
+snd_pcm_sw_params_current
+snd_pcm_sw_params_set_avail_min
+snd_pcm_sw_params_set_start_threshold
+snd_pcm_sw_params
+snd_strerror
+snd_pcm_readi
+snd_pcm_poll_descriptors
+fftwf_destroy_plan
+exp10f
+fftwf_plan_dft_1d
+fftwf_plan_dft_r2c_1d
+ceil
+snd_pcm_recover
+fftwf_execute
+sqrtf
+fftwf_plan_dft_c2r_1d
+SHA1
+log10
+floor
+png_create_write_struct
+png_create_info_struct
+png_init_io
+png_set_IHDR
+png_set_PLTE
+png_write_info
+png_write_row
+png_write_end
+png_destroy_write_struct
+pthread_cancel
+libc.so.6
+epoll_create
+setuid
+chroot
+pthread_cond_signal
+strcasestr
+socket
+fflush
+strcpy
+gmtime_r
+exit
+sprintf
+fopen
+strncmp
+strrchr
+perror
+__isoc99_sscanf
+connect
+__isnan
+in6addr_any
+epoll_wait
+inet_ntop
+strncpy
+unlink
+pthread_mutex_lock
+listen
+popen
+__assert_fail
+strtod
+strtof
+gmtime
+strtol
+feof
+fgets
+calloc
+strlen
+sigemptyset
+getaddrinfo
+memset
+strstr
+strcspn
+__errno_location
+bind
+memcmp
+vsnprintf
+_setjmp
+pthread_mutex_unlock
+stdout
+fputc
+recv
+getrusage
+fputs
+pthread_cond_wait
+lseek
+memcpy
+fclose
+setsockopt
+strcat
+strcasecmp
+ftello
+getpeername
+__ctype_b_loc
+nice
+stderr
+ioctl
+system
+seteuid
+getuid
+freopen
+strncasecmp
+__fxstat
+fileno
+fwrite
+fread
+gettimeofday
+sigaction
+epoll_ctl
+strchr
+qsort
+accept
+gethostbyname2
+sleep
+__ctype_toupper_loc
+__ctype_tolower_loc
+freeaddrinfo
+fcntl
+__xstat
+memmove
+strcmp
+__libc_start_main
+stpcpy
+fseeko
+vfprintf
+free
+libz.so.1
+gzclose
+gzopen
+gzwrite
+libpthread.so.0
+pthread_create
+pthread_join
+pthread_detach
+_edata
+__bss_start
+OPENSSL_1.0.0
+PNG12_0
+ALSA_0.9.0rc4
+ALSA_0.9
+GLIBC_2.2.5
+GLIBC_2.7
+GLIBC_2.3
+GLIBC_2.3.2
+ATUH
+|$HH
+t$@1
+|$ 1
+T$ H
+|$01
+5x^#
+|$ 1
+D$ H+D$0L
+d$(D+d$8i
+~.Hc
+\$ H
+D$ H
+D$0H
+D$(H
+[]A\
+AUATA
+ffff.
+t$(H
+T$0H
+L$8L
+D$@L
+L$Ht7
+)D$P
+)L$`
+)T$p
+D$ H
+t$(H
+T$0H
+L$8L
+D$@L
+L$Ht7
+)D$P
+)L$`
+)T$p
+[droppe
+fff.
+5s #
+}9Hc
+fff.
+[A\]
+[A\]
+AWAVAUATSH
+[A\A]A^A_]
+~DU1
+9-f>#
+L$0f
+^L$0
+^T$0
+\D$8
+^D$(f
+^L$0
+_D$ 
+D$ u
+T$ H
+L$(H
+H[]A\A]
+fffff.
+ATU1
+[]A\
+AWAVAUATUH
+[]A\A]A^A_
+HcD$
+HcL$
+ffff.
+ffff.
+AVAUE1
+ATE1
+|$0H
+D$0< ~
+D$(H
+L$$H
+T$,H
+|$01
+4!D9
+[]A\A]A^
+AVAUATE1
+|$ L
+D$ < ~
+|$ 1
+gfff~Hf.
+[]A\A]A^A_
+AWAVAUATU
+VUUU
+^D$8f
+YD$(
+YD$(
+YD$(
+X[]A\A]A^A_
+t!M9
+<$:u
+T$(H
+D$ H
+T$(L
+[]A\
+AWAVAUATI
+[A\A]A^A_]
+AWAVI
+AUATSH
+[A\A]A^A_]
+.%7Y
+[A\A]A^A_]
+AWAVAUATSH
+[A\A]A^A_]
+T$DE
+T$DE
+T$DE
+T$DE
+T$DE
+T$DE
+T$DE
+T$DE
+T$DH
+T$DH
+T$DH
+T$DH
+T$DL
+T$DL
+T$DL
+T$DL
+fff.
+fffff.
+ATUH
+[]A\A]
+AVAUI
+ATE1
+9C t
+[A\A]A^]
+^F8f
+~<A)
+ufHc
+fff.
+M@Hc
+HcU(H
+U0zn
+[]A\A]
+ffffff.
+ATUL
+E(E1
+@[]A\A]A^
+Lce(D
+ffffff.
+l$@H
+x	D;
+u	IcD$(H
+D$P[]I
+D$ A\
+HcC(H
+AWAVAUATSH
+[A\A]A^A_]
+$3Mc
+HcS\
+[]A\
+AWAVAUATI
+}nHc
+[]A\A]A^A_
+AWAVAUATS
+[A\A]A^A_]
+fffff.
+[]A\
+[]A\
+[]A\
+[]A\
+ffffff.
+; ~*H
+<+=t0
+[]A\
+; ~*H
+<+=t0
+[]A\
+; ~*H
+<+=t0
+[]A\
+AVLc
+; ~*H
+<+=t2
+[]A\A]A^
+ ~1f.
+&t"L9
+[]A\D)
+A]A^
+=G/"
+ATUS
+fff.
+fffff.
+={*"
+l$ H
+AWAVAUATUSH
+|$ H
+H[]A\A]A^A_
+D$2A
+T$ H
+D$ H
+L$(H
+D$8H
+L$(1
+D$31
+%LN"
+t$4I
+D$3H
+L$(H
+D$2D)
+D$2A
+H[]A\A]A^A_
+t$4H
+t$ A
+ffff.
+[]A\A]
+Cache-coH
+ntrol: nf
+o-cache
+Cache-coI
+ntrol: m
+ax-age=3H
+AWAVI
+AUATSH
+.t8A
+[A\A]A^A_]
+e: webso
+Upgrad
+HTTP/1.1I
+tching PI
+ 101 SwiI
+rotocolsI
+cket
+nnectionfA
+: Upgrad
+Sec-WI
+ebSocketI
+-Accept:I
+B|=A
+t.Lc
+index.htf
+@	ml
+ATUSH
+|$81
+L$0A
+L$0I
+h[]A\A]
+L$0D
+AUATUSH
+([]A\A]
+D$ 1
+=n0"
+=V0"
+8at 
+AWAVAUATUSH
+|$ H
+|$!I
+?=t~L
+HcD$
+[]A\A]A^A_
+ffffff.
+ffffff.
+ATUSH
+[]A\A]
+[]A\A]
+5n'"
+|$`L
+t$pE1
+L;t$0
+<\w,
+DD$8
+l$@H
+T$0H
+T$0H
+D$8H
+ED$8
+|$0L
+|$`H
+5/%"
+|$`I
+D$@H
+D$`L
+D$PH
+|$PH)
+t$PH
+t$hL
+D$hI
+D$hH
+|$0L
+t$0H
+l$hH
+T$XL
+</a>
+D$hI
+l$PM
+,?Hc
+L$(H)
+<a href=
+D=	">B
+</a>
+D$@L
+L$pHc
+D$`A
+D$(H
+H;D$8}
+|$@H
+|$pH
+T$0H
+|$0L
+t$0H
+D$pH
+D$(E1
+D$(t5
+D$(E1
+T$8H
+|$pH
+D$0L
+L$@L
+90~5
+AWAVAUATUSH
+[]A\A]A^A_
+AVAUATUH
+[]A\A]A^A_
+H+T$HH
+D$XL
+D$PH
+t$PH
+|$h1
+\D$`
+D$ H
+t$0L
+HcD$|
+ATUSH
+[]A\A]
+[]A\A]
+AUATUSH
+|$ H
+|$ 1
+z_u]A
+<br>A
+|$ 1
+[]A\A]A^
+[]A\A]A^
+ATUSH
+[]A\A]
+[]A\A]
+ffff.
+[]A\A]
+AWAVAUATUSH
+D$8H
+|$81
+T$PE
+T$|H=
+T$PE
+T$PA
+t$ H
+ChEi
+<td colsI
+pan=5></
+t$@L
+D$Pp2
+H;D$P
+t$dL
+L$PL
+T$dH
+T$pH
+T$xH
+T$tH
+T$lH
+T$hH
+T$|H
+[]A\A]A^A_
+ffff.
+AWAVI
+AUATUSH
+[]A\A]A^A_
+[]A\A]A^A_
+AWAVAUI
+ATUSH
+[]A\A]A^A_
+D;5o
+[]A\A]A^A_
+l$ L
+d$(L
+l$0L
+t$8L
+|$@H
+l$ H
+d$(L
+l$0L
+t$8L
+|$@H
+ATUSH
+H[]A\A]
+fffff.
+ATUH
+[]A\
+ffff.
+\$(H
+l$0L
+d$8L
+l$@L
+t$HL
+|$PH
+D$dI
+D$lA
+L$lA
+AWAVAUATSH
+D9-a
+[A\A]A^A_]
+ []A\
+AVAUI
+|$xH
+T$pH
+|$H1
+t$ I
+[]A\A]A^A_
+t$(H
+D9-!
+ff&?A
+|$81
+t$01
+AUATI
+|$81
+h[]A\A]A^A_
+h[]A\A]A^A_
+fff.
+D$(H
+AWAVAUATSH
+5e$!
+H=`?c
+tC<3
+[A\A]A^A_]
+AWAVAUATI
+t$PH
+t$0H
+xVD;5.
+}ME9u
+$tZI
+h[]A\A]A^A_
+t$0H
+L$(H
+h[]A\A]A^A_
+Y@AUA
+MbP?ATI
+zt?H
+Mb@?H
+MbP?
+t$`f
+.T$`
+\D$`
+l$pf
+T$`f
+.%rA
+T$xH
+D$Xf
+\T$`
+YT$x
+^T$p
+l$@f
+d$ A
+H+T$X
+[]A\A]A^A_
+l$`f
+zdub!
+\D$`
+YD$x
+AUATI
+[A\A]]
+ffff.
+AWAVAUA
+gfffA
+[A\D
+A]A^A_]
+[A\A]A^A_]
+[A\A]A^A_]
+\$(H
+l$0L
+d$8L
+l$@L
+t$HL
+|$PH
+l$0H
+\$(L
+d$8L
+l$@L
+t$HL
+|$PH
+~'f.
+KlH)
+AWAVAUATUSH
+HcGTH
+[]A\A]A^A_
+D$0A
+t$0H
+t$0A
+H+t$0L
+t$0A
+t$(A
+t$(E)
+D;\$
+H+l$0L
+t$0H
+[]A\A]A^A_
+|$8I
+\$ H
+D$(L
+d$ A
+\$(I
+D9\$
+|$8H
+H+D$0L
+|$ E
+t$0Hc
+l$0E1
+l$ H
+D$ H
+D$(H
+D$0H
+fffff.
+ATUS
+L$4H
+D$(H
+D$0D
+h[]A\A]
+h[]A\A]
+=on!
+PuH9
+xH=`
+^=Q@
+fffff.
+l$ L
+t$(L
+|$0H
+%s, 
+lbi %i
+Error %i in logprintf_dsp()
+../cfg/%s
+Can't open %s
+fftw-wisdom.dat
+public
+public2
+logdir
+%80s
+initial
+%f %4s
+Too many bands.
+device
+ifname
+samplerate
+centerfreq
+progfreq
+hack
+noniq
+swapiq
+equalize
+antenna
+delay
+gain
+noiseblanker
+extrazoom
+wspr
+idletimeout
+maxusers
+slowdownusers
+slowdownusers2
+fftplaneffort
+waterfallformat
+audioformat
+tcpport
+myhost
+rawpassword
+logfileinterval
+donttrustlocalhost
+dotrustlocalnet
+dotrust
+allowwide
+ %127s %i
+noorgserver
+hostname
+%127s
+http://
+chatboxlogfile
+chatrejectipranges
+chroot
+Email: 
+your@email.address
+rm -f %s/tmp/*
+%i:%i %x
+gaussian.dat
+G: %12g %12g %12g
+>>> WebSDR server (%s)<<<
+log-%i.txt
+chroot("%s") failed!
+poll -> %i
+select: %i %s
+/dev/null
+quitting...
+quitting
+websdr.cfg
+Can't resolve org server name; is DNS resolution working correctly on your system?
+GET /~~websdrNOorg?port=%i HTTP/1.1
+GET /~~websdrorg?host=%s&port=%i HTTP/1.1
+GET /~~websdrorg?port=%i HTTP/1.1
+Error in logprintf_dsp(): %i %s
+Do not put a URL in the hostname line, but only the hostname itself (i.e., omit http://).
+Hostname cannot contain ':' or '/'
+Error in configuration file: %s %s
+Error in configuration file: '%s %s' without preceding 'band' declaration
+Please include a line like 'org email your@email.address' in websdr.cfg (the e-mail address will not be shown on websdr.org, but it will be used to send you updates)!
+Please put your own e-mail address in the org email line, instead of the 'your@email.address' example.
+Copyright 2007-2014, Pieter-Tjerk de Boer, pa3fwm@websdr.org
+Can't open logfile for writing: %s
+Initialization completed; server is now running.
+Can't start thread for zipping logfile (%i)
+RTL-SDR
+Can't set fragmentsize.
+deinit'ing %s
+%f %f %f
+eq %i %g
+TCP-SDR
+rtlsdr
+tcpsdr
+Unknown device: %s
+dsp.c
+b->maxzoom <= 7
+Missing source for band %s
+Can't open %s for read - %s
+Planning FFTs for band %i...
+ done.
+1024<=b->Wfextrabuflen
+Reconnected to %s %s:%i successfully.
+Reconnection to %s %s:%i failed (%s).
+Soundcards with more than 16 channels are not supported
+Bands sharing multi-input soundcard have incompatible parameters
+Can't select %i input channels.
+Can't set audio data format to 16 bit little-endian.
+Non-IQ signals with multi-channel soundcards not supported
+Can't set input sample rate to %i.
+Can't open %s for read - quitting - %s
+Can't open ALSA sound device: %s (%s).
+Can't set samplerate for ALSA sound device %s to %i: %s.
+Can't set number of channels for ALSA sound device %s to %i: %s.
+Got ALSA buffer for band %i of %i frames
+Can't set parameters for ALSA sound device %s: %s.
+Error parsing balancing file: %s
+Error parsing equalizing file: %s
+Missing centerfrequency for band %s
+Missing samplerate for band %s
+Samplerate %i is not supported yet; continuing anyway, but this probably is not going to work well...
+Extrazoom %i not possible, setting to 0.
+b->Wffftlen/b->Wffraction<=(1024<<7)
+Can't connect to %s driver at %s:%i : %s
+PPM correction %i of %s out of reasonable range; typo?
+Syntax error in %s address (missing colon): %s
+on fd=%i -%s- stream write returned -1 (%i %i) ; %i %s
+on fd=%i -%s- incomplete write (%i %i)
+Connection to RTL-SDR %s:%i failed (%s).
+Connection to TCP-SDR %s:%i failed (%s).
+dsp_init_band
+dsp_read
+@Oops/demp: %i %p %i %i
+Filter edges out of range: %12g %12g %8i %8i %8i %8i
+on fd=%i -%s- stream write returned -1: %i %s
+^?-C
+?333333
+?333333
+dsp_waterfall.c
+b->Wffftlen == pix
+%g %g %g  %g %g
+Out of memory
+on fd=%i -%s- iqbalance stream write error %i %s
+dsp_calcwaterfall
+%s: maximum file inclusion recursion depth exceeded: %i %s
+%s: file %s not found at recursion depth: %i
+Can't open generictmpfile! (%i)
+fd=%i -%s-: closing http connection hp=%i
+fd=%i -%s-: closing in inet_ss_close(); %i
+fd=%i -%s-: marked for closing in inet_ss_close_dsp()
+fd=%i -%s-: closing in inet_ws_close(); %i
+# added from cookie %s, %s
+%s, fd=%i -%s-: rejecting; cookie=%s
+%s, fd=%i -%s-: closing http connection after failed write
+fd=%i -%s-: Disconnect on websocket socket (%p)
+fd=%i -%s-: websocket request %s
+fd=%i -%s-: Close on websocket socket (%p)
+HTTP/1.1 %s
+Server: WebSDR/%s
+Content-Length: %i
+Content-Type: text/html
+Cache-control: no-cache
+301 Moved Permanently
+Location: %s
+fd=%i -%s-: sending 404 for file not found: %s
+HTTP/1.1 200 OK
+Server: WebSDR/%s
+Content-Length: %i
+Set-Cookie: ID=%08x%04x; expires=Thu, 31-Dec-2099 00:00:00 GMT
+oops, assertion failed: ll=%i lll=%i
+Oops in process_http_requests %i %i
+Sorry, request too long for this simple server. No need to try again.
+fd=%i -%s-: Unknown request, sending 501: %4.4s
+fd=%i -%s-: Websocket upgrade failed, missing key
+fd=%i -%s-: Websocket upgrade failed, missing host %s or origin %s
+fd=%i -%s-: Websocket upgrade denied (%s %s)
+fd=%i -%s-: changing to WebSocket
+fd=%i -%s-: sending 404 for illegal file name
+%s, fd=%i -%s-: new with error: %s
+%s, fd=%i -%s-: Oops, old hp still open: %i %s
+%s, fd=%i -%s-: Oops: too many http connections! Sending 500.
+HTTP/1.1 500 Internal Server Error
+Content-Length: 66
+Content-Type: text/html
+Cache-control: no-cache
+Server busy: too many simultaneous connections. Try again later.
+fd=%i -%s-: Disconnect on socket (%p)
+fd=%i -%s-: http connection inactive for %i seconds
+%s, fd=%i -%s-: Oops, sfile=0; closing
+Your Linux kernel does not support IPv6.
+Can't find myhost "%s" - binding to all.
+Listening on port %i failed - that needs root permissions.
+Listening on port %i failed - another program seems to use it already.
+%s/%s
+<!--#include file=
+%.*s/%s
+reject.txt
+::ffff:
+127.0.0.1
+192.168.
+# added from %s, %s
+200 OK
+404 Not Found
+File not available.
+http://%s%s/
+Content-Type: %s
+inet.c
+ll<1024
+applet/java
+text/html
+applet/java-archive
+image/png
+image/gif
+image/jpeg
+image/jpg
+text/plain
+application/x-javascript
+image/svg+xml
+text/css
+application/x-shockwave-flash
+application/pdf
+application/zip
+application/octet-stream
+application/x-gzip
+500 Internal Server Error
+fd=%i -%s-: http request %s
+Cookie: 
+GET 
+501 Not Implemented
+ HTTP/%d.%d
+Upgrade: websocket
+Sec-WebSocket-Key: 
+Host
+Origin
+403 Forbidden
+Referer
+User-Agent
+fd=%i -%s-: %s
+.class
+.htm
+.gif
+.jpeg
+.jpg
+.svg
+.css
+.swf
+.pdf
+.zip
+.tgz
+fd=%i -%s-: new hp=%i
+socket() failed:
+bind failed:
+listen failed:
+pub2
+../pub
+http_sendfile_
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+cty.dat
+([<{,;
+intlog2(%i)
+util.c
+0==1
+%04i%02i%02i-%02i%02i%02i
+intlog2
+disable
+line
+%4i %10i -%s- -%s-
+%s %s
+chatcensor.txt
+%s (%s, %s) %s: %s
+%02i %3s %02i%02iz %s: 
+s://
+http
+chatbox.c
+chatnewline('%s');
+/~~chatidentities
+/~~chatcensor
+/~~chat
+%s, fd=%i -%s-: rejecting chat, IP-based; cookie=%s
+%s, fd=%i -%s-: rejecting chat, IP-based; cookie=%s, arguments=%s
+<a href="javascript:setfreqb(%.2f)">
+<a href="javascript:set_mode(\'%s\');setfreqb(%.2f)">
+get_chat
+zDnr
+date 
+-----
+Thanks, new DXCC country!
+Thanks!
+Sorry, technical problem.
+call
+comment
+logbook update took %i usec
+/~~logbook
+/~~loginsert
+/~~log?
+date     UTC    freq   call           comments                        dxcc country        heard by
+--------------------------------------------------------------------------------------------------
+logbook insert refused because of missing callsign
+logbook insert refused because of no matching audiostream
+%04i%02i%02i %02i:%02i %9.1f %-10.16s %-32.32s%n %s %-4.4s%-16.16s %s
+dx(%f,"%s","%s");
+stationinfo.txt
+/~~fetchdx
+skipmute
+maxusers=%i  skipmute=%i  
+%i %llu %llu
+android
+mobile
+mobile/iOS
+mobile/Android
+</table>
+chseq
+location.reload(true);
+chseq=%i;
+uu(%i,'%s',%i,%f);
+text/html; charset=UTF-8
+%s<br>
+numusersobj.innerHTML="%i";
+usersobj.innerHTML='
+<div class=others>
+</div>';
+<img src=%s></div>
+speed
+slow
+start
+scale
+width
+Users: %i
+Config: %i
+Mobile: m.html
+Bands: %i
+Band: %i %f %f %s
+Band not available.
+%s/tmp/%lli-
+ done
+%s/tmp/bandinfo.js
+%sb%iz0i0.png
+var nbands=%i;
+var ini_freq=%f;
+var ini_mode='%s';
+var chseq=2;
+var bandinfo= [
+var dxinfoavailable=%i;
+var idletimeout=%i;
+var has_mobile=%i;
+  { centerfreq: %f,
+    samplerate: %f,
+    tuningstep: %f,
+    maxlinbw: %f,
+    vfo: %f,
+    maxzoom: %i,
+    name: '%s',
+    scaleimgs: [
+      [
+%s"%sb%iz%ii%i.png"
+httpui.c
+hp->audiostream
+hp->audiostream->band
+%s %i - %s %i %s
+%s %i + %s
+%s %i =
+jj>=0
+log-cpuload.txt
+%f %f %f   %f %f %f
+2websdr-controls.html
+2websdr-base.js
+userslog.txt
+%s/logbook.txt
+%s/tmp/tmp.tmp
+/~~orgstatus
+/~~waterfalltext
+/~~iqbalance
+/~~waterstream
+/~~waterparam
+/~~stream
+/~~param
+/~~othersj
+/~~othersjj
+/~~otherstable
+/~~histogram
+/~~raw
+/~~configreload
+/~~blockmee
+/~~status
+/~~setdir
+/~~setconfig
+Logo: 
+2websdr-head.html
+2websdr-1405020937.jar
+2websdr-sound.js
+2websdr-waterfall.js
+2websdr-javasound.js
+2websdr-javawaterfall.js
+2edgelowerbb.png
+2edgeupperbb.png
+2edgelower.png
+2edgeupper.png
+2carrier.png
+2smeter1.png
+2scaleblack.png
+2sysop.html
+0index.html
+3m.html
+%s/tmp/test.txt
+&#38;
+&lt;
+&gt;
+&#39;
+&#34;
+&#92;
+mode
+squelch
+autonotch
+ppml
+tmp/orgstatus_tmp.html
+name     overruns readb.  blocks          timestamp  users  10sec_ADmin/max  ever_ADmin/max  source
+%g(%lli) %g(%lli) %g(%lli) %g %g(%lli) %g
+%-8s %8i %3i %10i  %10i.%06i  %-5i  %7i %-7i %7i %-7i  %i,%s
+style='background-color: #FFFFC0'
+style='background-color: #C0FFFF'
+<style type='text/css'>table {text-align:center; empty-cells:hide;}</style>
+This WebSDR is currently being used by %i user(s) simultaneously:<br>
+<table border=1><tr><th rowspan=2>Name</th><th colspan=4>Audio</th><th rowspan=2><font size=-1>IP address</font></th><th colspan=6>Waterfall</th></tr>
+<tr><th>band</th><th>freq/kHz</th><th>filter&amp;dem.</th><th>format;bps</th><th>band</th><th>center/kHz</th><th>width/kHz</th><th>speed</th><th>format</th><th>bits/pixel</th></tr>
+<td>%s</td><td>%i</td><td>%7.2f</td><td>%.2f...%.2f %s</td><td %s>%i%s/%02x, %s %4.2f</td>
+<td>%s</td><td rowspan=4>%s %i</td><td><font size=-1>%s</font></td>
+<tr>%s<td><font size=-1>%s</font></td><td>%i</td><td>%7.1f</td><td>%7.1f</td><td>%i</td><td %s>%i%s</td><td>%4.2f</td><td>%s<td></tr>
+<tr>%s<td><font size=-1>%s</font></td><td colspan=6></td><td>%s<td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td><font size=-1>%s</font></td><td>%i</td><td>%7.1f</td><td>%7.1f</td><td>%i</td><td %s>%i%s</td><td>%4.2f</td><td>%s<td></tr>
+<p><table><tr><td>Audio websockets:</td><td>%i</td></tr>
+<td>Waterfall websockets:</td><td>%i</td></tr>
+<td>Enabled squelches:</td><td>%i</td></tr>
+<td>Enabled autonotch:</td><td>%i</td></tr>
+<td>Muted:</td><td>%i</td></tr>
+<td>Android:</td><td>%i</td></tr>
+<td>Mobile Android:</td><td>%i</td></tr>
+<td>Mobile iOS:</td><td>%i</td></tr>
+<td>Mobile total:</td><td>%i</td></tr>
+<td>SSB wide:</td><td>%i</td></tr>
+<td>AM wide:</td><td>%i</td></tr>
+HTTP/1.1 200 OK
+Content-Length: 0
+Content-Type: text/html
+Cache-control: no-cache
+statsobj.innerHTML="Past 10 seconds: CPUload=%.1f%%, %.2f users; audio %.1f kb/s, waterfall %.1f kb/s, http %.1f kb/s
+if (chatboxobj) chatboxobj.innerHTML='
+statsobj.innerHTML="Past 10 seconds: CPUload=%.1f%%, %.2f users
+<br>%s: 10sec ADmin/max=%i/%i; ever ADmin/max=%i/%i
+<p><div align="left" style="width:1024px; background-color:black;">
+<div id="user%i" align="center" style="position:relative;left:%ipx;width:500px; color:%s;"><b>%s</b></div>
+document.getElementById('user%i').style.left="%ipx";
+# added by ~~blockmee, %s, %s
+%s, fd=%i -%s-: ignoring get_waterstream on already active stream %i %i
+fd=%i -%s-: assigned waterstream %i
+%s, fd=%i -%s-: Too many waterstreams...
+Writing frequency axis images...
+fd=%i -%s-: assigned raw stream %i
+%s, fd=%i -%s-: Too many streams...
+%s, fd=%i -%s-: ignoring get_stream on already active stream %i %i
+%s, fd=%i -%s-: reporting busy, %i users
+fd=%i -%s-: assigned stream %i
+fd=%i -%s-: assigned iqbalance stream %i
+Can't open userslog.txt, writing to stderr instead.
+ERROR: Can't access public directory '%s'.
+WARNING: Public directory '%s' is not a directory.
+WARNING: Public file '%s' is missing.
+WARNING: Public file '%s' or '%s' is missing.
+WARNING: Public file '%s' is overridden by your local copy '%s'; are you sure you want this?
+Logbook file '%s' was missing - created an empty one
+WebSDR logbook - note that entries can be made by anyone so correctness is not guaranteed
+--------------------------------------------------------------------------------------------------
+date     UTC    freq   call           comments                        dxcc country        heard by
+--------------------------------------------------------------------------------------------------
+ERROR: Can't write in '%s/tmp/'.
+change_numusers
+setup_stream
+MbP?
+4@%.*f
+%sb%iz%ii%i.png
+Can't write to '%s'
+1.2.49
+PNG creation failed for '%s'
+?datacompression.c
+len==128
+ws->writeskip==-1
+on fd=%i -%s- stream write returned -1 %i %s
+on fd=%i -%s- incomplete write %i/%i
+send_audio_compressed3
+send_waterfall_compressed
+zt?{
+@ffffff
+Aworker.c
+qlen<10
+worker_enqueue
+wspr-do.sh
+nice -19 ./wspr0 Rx %.6f %s
+rm %s
+./wspr_upload.py
+WSPR receiver on %f.
+wspr.c
+j<dem->nout*4
+mv ALL_WSPR0.TXT ALL_WSPR0.TXT.tmp
+wspr-%i-%02i%02i%02i-%02i%02i.wav
+cat ALL_WSPR0.TXT >> ALL_WSPR0.TXT.tmp
+mv ALL_WSPR0.TXT wspr-new.txt
+mv ALL_WSPR0.TXT.tmp ALL_WSPR0.TXT
+bash -c 'source ./wspr-do.sh' &
+Out of memory for WSPR receiver.
+Too many WSPR receivers; skipping %s.
+RIFF
+WAVEfmt 
+data
+5?21
+5?21
+do_wspr
+;*3$"
+websdr.ewi.utwente.nl
+log/
+S7\EA36
+oq4Y	S
+R77(
+|5zmR
+%NR7Yh
+57,R
+Q7sA
+[Q7(
+5q*Q
+6#KP
+N7jg*6
+366n
+,VL7
+K7n!e6",K
+p6OWJ
+6R<D
+C7|<
+FVA7j
+6!@7
+987S"
+T57Dl
+SM27
+'#/79
+"7L1
+7rJ(7
+*7-G
+-7^C
+6<8/7
+27vn
+6m&47J
+87&`
+E=7@
+6~hA7
+6W{I7
+XO767Q
+}xB6F
+.62:R7
+U7FJ
+mV7A
+*f5+
+'Y7H
+'Z7L
+	4sdZ7
+^_Z7
+4ktZ
+`'[7F
+L[7=
+55`[
+[7(<
+^;\7
+X]7*
+e&6e=_
+/6Wc`
+0-b7
+v@66
+7Xg7
+4j7A
+^@6q
+%6i@~
+U1+a
+!Dp7
+=,jw>1
+\~?M
+>,jw>
+7!Dp7
+)t70$9
+o7 P?
+^@6-
+m7r=A
+k7yvB
+B67Xg7
+v@6]
+960-b7
+e&6u
+y\7YT
+5^;\7
+t[7k
+L[7kT
+5`'[7
+ha5{
+zA5M
+}Z7O>
+lZ7l'
+_Z7K
+3^_Z7e\
+sdZ7
+@?5u
+*f5G
+mW7[
+VU7=
+6~vT
+(T7?e
+2:R7
+P7}xB6KwP
+LL6*
+!V6~
+_6Q,N
+AK7~
+W{I7L
+6l*G
+6KTD
+~hA7
+E=7B
+m&47
+6@X3
+<8/7
+rJ(7
+!7G\	
+&7"E
+6'#/7V
+6SM27n
+987h
+97,T
+>7z(
+66!@7
+6FVA7Qc
+E7Am
+n!e6D
+pY6,VL7
+`N7fN0
+jg*6
+R76b
+5%NR7,l
+\EA3S
+x?hn
+u?fZx?
+?j\y?
+?m=z?
+?]tz?
+gw?5
+Bw?f
+"v?k
+ {?@1v?
+|?,]
+Mv?R
+|?Y<
+{?Mhv?
+`|?A
+Uv?Iz{?	
+v?1:v?c6{??}
+&v?7
+z?SX
+q}?.8w?>
+z?I6
+u?{ay?ef
+u?qmx?!t
+?qLy?
+;x?O,
+w?iQ~?
+6z?-
+Cw?K
+"v?3
+?N#{?
+|?x[
+Ov?&
+|?o9
+{?Tkv?
+v?O+|?
+{?Uo
+F}?? w?
+Hw?h
+z?I'
+v?$gz?
+u?L,z?
+?^_~?
+y?Q&
+?tOy?
+~?0	
+=~?d
+v?>Zw?/
+v?Y0w?
+b}?\
+{?,+v?
+?5R{?
+|?qD
+cv?4
+v?Fjv?
+v?3Lv?
+v?3.v?
+?wV}?
+z?BA
+}?1Uw?
+Mz?%
+;~?@
+y?#|
+?a{x?
+?D%y?
+u?z`x?!`
+u?P#x?
+w?P\~?
+?}4z?
+4w?\h}?4
+{?u+v?
+}?=h
+?`[{?
+Jv?L
+{?Zkv?)
+v?1h|?%
+?ZI|?f
+!{?Tp
+M}?F%w?W
+u?5@z?
+?pR~?
+u?FSx?
+vy?9
+~?=.
+kz?D
+v?ziw?u
+v?h3w?
+e}?B
+{?I.v? 
+|?Q^
+?`t{?
+|?Z.
+{?b{v?w
+v?H>|?a
+-|?_
+hw?H
+?V)~?
+?>#x?
+?!`y?
+yv?>
+/}?C
+w?=#v?d
+^w?/
+uz?K	
+u?i.y?a>
+u?tnx?
+v?[ew?2
+z?i$v?,
+#}?1m
+q{?cVv?
+v?dUv?kn{?
+,}?R
+rw?h
+v?SPz?
+?9m~?p
+u?d9y?
+Bx?r'
+z?.,v?*
+|?6Q
+{?Cvv?
+v?k4|?
+=}?)%w?`
+Oy?2P
+?~`y?
+.z?z
+z?s-v?
+z?h@
+	y?[
+u?q.x?	
+~?&*
+?t4z?
+v?x6v?l
+{?rN
+x?"{
+{?Ayv?
+}?U_w?
+v?vSz?
+s~?K
+|?w:w?
+y?<V
+?G0y?
+U}<w
+;:E,:
+lbQ7
+8E2&74
+$8Y;
+7Ls$8'
+;#8T
+70]!8
+'88q
+Z&8&
+O&8_K
+7rs&8
+8p#B7u`
+7\g#8
+8G=&8
+	8%Y$8<
+pz$7
+8t2!8
+8^SJ7
+"8G~
+852#7
+$8&&
+s%8=
+7qA'8Oc
+&8#/
+q%8k
+#8TY
+$7u5
+l^7c
+a+v7N
+ 8sZ
+`&8%
+7,+'8
+7SC'8
+&81E
+1<D6
+8D*&8Hz
+8ah#8
+K"8#
+# 87
+N7<^
+% 8@O
+>7+P
+["8eq
+5#8	
+#85B
+	8mb
+m62D
+7UZ'8'
+7Dg'8
+7?!O3H
+&8[2
+u'6#
+<bK6
+c&8&
+8W+&8
+%8}S
+8Y@%8rn
+p(	7
+8,1#837
+8}m"8
+!7S:
+"8pn
+^!8`
+h%17
+!85d
+8:l 8
+76"=
+^?7J/
+7bvM
+]U[7.
+_7vi
+3Yc7
+7S5e
+=g7mG
+7%4g
+swf7*2
+ue7+
+7_Ha
+r4`7
+6T7p
+sA7CH
+7]b8
+k!8O
+7OJ*
+_&7+
+7AI"
+8Np$8
+8I2&8
+8~i&8?
+725y
+'5X69
+79m'8ty
+ R5@G
+%8bP
+$8ta
+"8^c
+8KVu7
+t7H%
+7Nt`
+  8*M
+%8>Q
+[k7 
+Rq7i
+88""8
+78""8
+%8Z<
+'8}W
+"7b_
+K7%I
+KVu7
+7d9d
+37^c
+7X6#
+ R5ty
+79m'8
+7'5X6h
+7~i&8
+7I2&8+X
+=%8e
+7Np$8
+#8p]
+;7f>
+& 8CH
+F7+G
+4P78,
+Z7[t
+8r4`7S-
+8swf7
+=g7,
+`f7X
+d7&d
+83Yc7b
+8]U[7
+>O7w
+G7Ue
+C7]9
+" 8J/
+7:l 8
+:7,-
+8h%17e
+^!8@
+&704
+"8S:
+7}m"8hz
+7,1#8&
+8p(	7
+#8qC
+h$8pj
+7Y@%8
+7W+&8
+F&8B?
+c&82
+7<bK6
+u'6j|
+"'8w
+D'8Sq
+?!O3
+7Dg'8)0
+7UZ'8
+3&8s{
+]%85
+$8s)
+%7eq
+G!8"b
+>7@O
+Y7Gk
+6j74
+7ah#8p
+$81G
+7D*&8
+k&8+T
+71<D6Tq
+&8p-
+7SC'8
+7,+'8`Y
+`&8OL
+47sZ
+8a+v7j
+l^7w
+B78B
+!8u5
+#8d2
+7qA'8
+In4P
+!>6G
+$8 '
+52#7G~
+^SJ7\
+7t2!8
+8pz$7
+7%Y$8
+7G=&8
+8\g#8
+p#B7r]
+%8%6
+7rs&8
+#8dW
+O&8&4
+Z&86
+7[vl
+ 8?\
+'8HA
+80]!8
+;#8+
+8Ls$8m
+E2&7q
+8lbQ7$
+:E,:w
+._?G0y?
+"v?`
+u?w:w?
+Vv?"
+s~?/
+?vSz?
+|?39
+v?U_w?
+v?Ayv?S
+{?x6v?{
+u?t4z?"
+~?q.x?
+Tx?o2
+v?s-v?
+~w?z
+u?~`y?
+v?)%w?
+o|?@
+?k4|?
+v?Cvv?
+v?.,v?
+_z?d
+?d9y?
+;x?"
+w?9m~?
+?SPz?h
+"v?R
+?kn{?dUv?
+v?cVv?
+#}?,
+w?i$v?
+}?[ew?
+sy?"n
+?tnx?
+?i.y?
+Mx?\>
+uz?/
+z?=#v?C
+/}?~t
+Jv?h
+=|?>
+Vw?K
+$z?X
+u?!`y?
+y?w)
+sx? x
+u?>#x?
+w?V)~?
+kz?H
+hw?n
+1v?P
+|?#&
+?H>|?w
+v?b{v?l
+Tv?`t{?+
+v?I.v?
+{?`f
+e}?h3w?+
+}?ziw?D
+"~?_
+vy?Js
+?FSx?
+0y?&B
+w?pR~?J
+?5@z?
+v?F%w?
+|?:X
+xv?f
+v?ZI|?
+?1h|?)
+v?Zkv?M
+Jv?`[{?a
+w?u+v?p
+{?Pa
+?\h}?
+4w?J
+xz?:
+u?}4z?
+?P\~?
+?P#x?
+ay?2e
+?z`x?
+u?D%y?M;
+u?a{x?
+Ax?64
+;~?D
+v?1Uw?
+)w?wV}?
+{?3.v?	
+a{?3Lv?
+{?Fjv?
+6|?=
+||?4
+Ev?5R{?M
+w?,+v?A
+b}?Y0w?
+}?>Zw?%
+=~?-
+u?tOy?rY
+w?^_~?
+?L,z?
+?$gz?
+pw?4
+Hw?g
+!v?? w?
+|?E^
+.|?i
+?O+|?2
+v?Tkv?
+2v?N#{?
+?}?3
+"v?A
+z?FN
+6z?/
+?iQ~?
+y?k}
+u?qLy?
+?qmx?
+?{ay?
+%x?N
+v?.8w?
++}?0v
+?c6{?1:v?
+|?TS
+?Iz{?
+Uv?d
+pv?A
+`|?z
+5|?_
+v?Mhv?
+g{?\
+v?@1v?
+@}?k
+z?D-
+v?]tz?
+u?m=z?>
+G~?V
+u?j\y?3c
+?fZx?
+258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+#ff4040
+#ffa000
+#a0a000
+#80ff00
+#00ff00
+#00a0a0
+#0080ff
+#ff40ff
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  x  
+  x  
+  x  
+  x  
+  x  
+     
+  x  
+     
+ x x 
+ x x 
+     
+     
+     
+     
+     
+     
+     
+     
+ x x 
+xxxxx
+ x x 
+xxxxx
+ x x 
+     
+  x  
+ xxxx
+x x  
+ xxx 
+  x x
+xxxx 
+  x  
+     
+     
+     
+xx  x
+x  x 
+  x  
+ x  x
+x  xx
+     
+     
+ x   
+x x  
+ x   
+x x x
+x  x 
+ xx x
+     
+  x  
+  x  
+     
+     
+     
+     
+     
+     
+  x  
+ x   
+ x   
+ x   
+ x   
+ x   
+  x  
+     
+  x  
+   x 
+   x 
+   x 
+   x 
+   x 
+  x  
+     
+     
+     
+ x x 
+  x  
+xxxxx
+  x  
+ x x 
+     
+     
+     
+  x  
+  x  
+xxxxx
+  x  
+  x  
+     
+     
+     
+     
+     
+     
+  x  
+  x  
+ x   
+     
+     
+     
+     
+xxxxx
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  x  
+     
+    x
+    x
+   x 
+  x  
+ x   
+x    
+x    
+     
+  x  
+ x x 
+x   x
+x   x
+x   x
+ x x 
+  x  
+     
+  x  
+ xx  
+  x  
+  x  
+  x  
+  x  
+ xxx 
+     
+ xxx 
+x   x
+    x
+   x 
+  x  
+ x   
+xxxxx
+     
+xxxxx
+    x
+   x 
+  xx 
+    x
+x   x
+ xxx 
+     
+   x 
+  xx 
+ x x 
+x  x 
+xxxxx
+   x 
+   x 
+     
+xxxxx
+x    
+xxxx 
+    x
+    x
+x   x
+ xxx 
+     
+  xx 
+ x   
+x    
+xxxx 
+x   x
+x   x
+ xxx 
+     
+xxxxx
+    x
+   x 
+   x 
+  x  
+  x  
+  x  
+     
+ xxx 
+x   x
+x   x
+ xxx 
+x   x
+x   x
+ xxx 
+     
+ xxx 
+x   x
+x   x
+ xxxx
+    x
+   x 
+ xx  
+     
+     
+     
+  x  
+     
+     
+     
+  x  
+     
+     
+     
+  x  
+     
+     
+  x  
+  x  
+ x   
+   x 
+  x  
+ x   
+x    
+ x   
+  x  
+   x 
+     
+     
+     
+xxxxx
+     
+     
+     
+xxxxx
+     
+ x   
+  x  
+   x 
+    x
+   x 
+  x  
+ x   
+     
+ xxx 
+x   x
+   x 
+  x  
+  x  
+     
+  x  
+     
+ xxx 
+x   x
+x xxx
+x x x
+x xxx
+x    
+ xxxx
+     
+ xxx 
+x   x
+x   x
+xxxxx
+x   x
+x   x
+x   x
+     
+xxxx 
+x   x
+x   x
+xxxx 
+x   x
+x   x
+xxxx 
+     
+ xxx 
+x   x
+x    
+x    
+x    
+x   x
+ xxx 
+     
+xxxx 
+x   x
+x   x
+x   x
+x   x
+x   x
+xxxx 
+     
+xxxxx
+x    
+x    
+xxxx 
+x    
+x    
+xxxxx
+     
+xxxxx
+x    
+x    
+xxxx 
+x    
+x    
+x    
+     
+ xxx 
+x   x
+x    
+x xxx
+x   x
+x   x
+ xxx 
+     
+x   x
+x   x
+x   x
+xxxxx
+x   x
+x   x
+x   x
+     
+ xxx 
+  x  
+  x  
+  x  
+  x  
+  x  
+ xxx 
+     
+    x
+    x
+    x
+    x
+    x
+x   x
+ xxx 
+     
+x   x
+x  x 
+x x  
+xx   
+x x  
+x  x 
+x   x
+     
+x    
+x    
+x    
+x    
+x    
+x    
+xxxxx
+     
+x   x
+xx xx
+xx xx
+x x x
+x x x
+x   x
+x   x
+     
+x   x
+xx  x
+xx  x
+x x x
+x  xx
+x  xx
+x   x
+     
+ xxx 
+x   x
+x   x
+x   x
+x   x
+x   x
+ xxx 
+     
+xxxx 
+x   x
+x   x
+xxxx 
+x    
+x    
+x    
+     
+ xxx 
+x   x
+x   x
+x   x
+x x x
+x  xx
+ xxxx
+     
+xxxx 
+x   x
+x   x
+xxxx 
+x x  
+x  x 
+x   x
+     
+ xxx 
+x   x
+x    
+ xxx 
+    x
+x   x
+ xxx 
+     
+xxxxx
+  x  
+  x  
+  x  
+  x  
+  x  
+  x  
+     
+x   x
+x   x
+x   x
+x   x
+x   x
+x   x
+ xxx 
+     
+x   x
+x   x
+x   x
+ x x 
+ x x 
+ x x 
+  x  
+     
+x   x
+x   x
+x   x
+x x x
+x x x
+x x x
+ xxx 
+     
+x   x
+ x x 
+ x x 
+  x  
+ x x 
+ x x 
+x   x
+     
+x   x
+x   x
+ x x 
+ x x 
+  x  
+  x  
+  x  
+     
+xxxxx
+    x
+   x 
+  x  
+ x   
+x    
+xxxxx
+     
+ xxx 
+ x   
+ x   
+ x   
+ x   
+ x   
+ xxx 
+     
+x    
+x    
+ x   
+  x  
+   x 
+    x
+    x
+     
+ xxx 
+   x 
+   x 
+   x 
+   x 
+   x 
+ xxx 
+     
+  x  
+ x x 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+xxxxx
+ x   
+ x   
+  x  
+     
+     
+     
+     
+     
+     
+     
+ xxx 
+    x
+ xxxx
+x   x
+ xxxx
+     
+x    
+x    
+xxxx 
+x   x
+x   x
+x   x
+xxxx 
+     
+     
+     
+ xxxx
+x    
+x    
+x    
+ xxxx
+     
+    x
+    x
+ xxxx
+x   x
+x   x
+x   x
+ xxxx
+     
+     
+     
+ xxx 
+x   x
+xxxxx
+x    
+ xxxx
+     
+  xx 
+ x  x
+ x   
+xxx  
+ x   
+ x   
+ x   
+     
+     
+     
+ xxxx
+x   x
+x   x
+ xxxx
+    x
+xxxx 
+x    
+x    
+x    
+xxxx 
+x   x
+x   x
+x   x
+     
+  x  
+     
+ xx  
+  x  
+  x  
+  x  
+ xxx 
+     
+   x 
+     
+  xx 
+   x 
+   x 
+   x 
+x  x 
+ xx  
+x    
+x    
+x   x
+x  x 
+xxx  
+x  x 
+x   x
+     
+ xx  
+  x  
+  x  
+  x  
+  x  
+  x  
+ xxx 
+     
+     
+     
+xx x 
+x x x
+x x x
+x x x
+x   x
+     
+     
+     
+xxxx 
+x   x
+x   x
+x   x
+x   x
+     
+     
+     
+ xxx 
+x   x
+x   x
+x   x
+ xxx 
+     
+     
+     
+xxxx 
+x   x
+x   x
+xxxx 
+x    
+x    
+     
+     
+ xxxx
+x   x
+x   x
+ xxxx
+    x
+    x
+     
+     
+x xxx
+xx   
+x    
+x    
+x    
+     
+     
+     
+ xxxx
+x    
+ xxx 
+    x
+xxxx 
+     
+ x   
+ x   
+xxx  
+ x   
+ x   
+ x  x
+  xx 
+     
+     
+     
+x   x
+x   x
+x   x
+x   x
+ xxxx
+     
+     
+     
+x   x
+x   x
+ x x 
+ x x 
+  x  
+     
+     
+     
+x   x
+x x x
+x x x
+x x x
+ xxx 
+     
+     
+     
+x   x
+ x x 
+  x  
+ x x 
+x   x
+     
+     
+     
+x   x
+x   x
+x   x
+ xxxx
+    x
+xxxx 
+     
+     
+xxxxx
+   x 
+  x  
+ x   
+xxxxx
+     
+  xx 
+ x   
+ x   
+x    
+ x   
+ x   
+  xx 
+     
+  x  
+  x  
+  x  
+  x  
+  x  
+  x  
+  x  
+     
+ xx  
+   x 
+   x 
+    x
+   x 
+   x 
+ xx  
+     
+ xx x
+x  x 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  !!""##$$%%&&''(())**++,,--..//00112233445566778899::;;<<==>>??ABDEGHJKMNPQSTVWYZ\]_`bcefhiklnoqrtuwxz{}~
+!"$%'(*+-.0134679:<=?@BCEFHIKLNOQRTUWXZ[]^`acdfgijlmoprsuvxy{|~
+20140718.1716-64
+GCC: (Debian 4.7.2-5) 4.7.2
+GCC: (Debian 4.4.7-2) 4.4.7
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment

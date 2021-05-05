@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+
+<!-- TODO: put a nice title in the next line -->
+<!-- <title>WebSDR at ON5HB / ON3MS in Heppen - Belgium</title> -->
+
+<script type='text/javascript'> 
+title = "==> WebSDR at ON5HB / ON3MS in Heppen - Belgium <==";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
+}
+scrolltitle();
+</script>
+
+<!--#include file="websdr-head.html"-->
+</head>
+
+<body onload=bodyonload()>
+
+<!-- TODO: put something nice here that explains what this page is, where your receiver is, your contact information, etc. -->
+<!-- Please include some reference to the websdr.org side, so users of your radio can find out more about the system. -->
+<hr>
+<h1><b>This is a WebSDR receiver, located in Heppen - Limburg - Belgium - JO21oc - 70m ASL.</b></h1>
+<hr>
+<a href="http://www.heppen.be/honypot/honypot.php" style="display: none;">splitting-expression</a>
+<br>
+Operated by Bas ON5HB and Marian ON3MS, e-mail <a href="mailto:on5hb@heppen.be" style="color: #fffff0" >==> Bas and Marian <==</a>, easylink is: <a href="http://websdr.heppen.be" style="color: #fffff0">==> http://websdr.heppen.be <==</a>
+<br>
+<h3>
+!! Beware when we are transmitting ourselves reception will be disturbed !!
+</h3>
+Information about the WebSDR project and other servers can be found at <a href="http://www.websdr.org" style="color: #fffff0">==> http://www.websdr.org <==</a>
+<p>
+<b>NOTE 1 </b> Antenna is normally G5RV or Inverted-L (54m longwire), depends on the bands I'm using myself.
+<br><br>
+<b>NOTE 2 </b> All receivers are SDRplay RSP1A and RSP2 <a href="https://www.sdrplay.com/rsp1a/" style="color: #fffff0">==> SDRplay info RSP1A page <==</a><br>
+If you need information on how to install the RSP1A at your own websdr.org-sdr, just mail us.
+<br><br>
+<hr>
+<h3>Please support this project with a small donation so we can buy better receivers, receivers are real expensive:</h2>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="WMHSAYH3YA3JS" />
+<input type="image" src="https://www.paypalobjects.com/en_US/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safe way to pay online!" alt="Donate with PayPal button" />
+</form>
+
+<!--#include file="websdr-controls.html"-->
+</body>
+</html>
+
