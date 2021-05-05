@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# data is collected in the file ./wspr-multi.txt
+# 160m band is called first in wspr-do.sh !!
+
+# 630m
+if [ $2 == '0.474187' ]
+then
+dialfreq=0.4742
+./wsprd -J -H -a ./630m -f $dialfreq $3
+#echo "Params passed " $dialfreq " "$2" "$3 >> ./630m/params.txt
+cat > ./wspr-multi.txt
+cat ./630m/wspr_spots.txt >> ./wspr-multi.txt
+rm ./630m/ALL_WSPR.TXT
+
+# 160m
+elif [ $2 == '0.032594' ]
+then
+dialfreq=1.8366
+./wsprd -J -H -a ./160m -f $dialfreq $3
+#echo "Params passed " $dialfreq " "$2" "$3 >> ./160m/params.txt
+cat > ./wspr-multi.txt
+cat ./160m/wspr_spots.txt >> ./wspr-multi.txt
+rm ./160m/ALL_WSPR.TXT
+
+# 80m band
+elif [ $2 == '0.110594' ]
+then
+dialfreq=3.5686
+./wsprd -J -H -a ./80m -f $dialfreq $3
+#echo "Params passed " $dialfreq " "$2" "$3 >> ./80m/params.txt
+cat > ./wspr-multi.txt
+cat ./80m/wspr_spots.txt >> ./wspr-multi.txt
+rm ./80m/ALL_WSPR.TXT
+
+# 40m band
+elif [ $2 == '0.038594' ]
+then
+dialfreq=7.0386
+./wsprd -J -H -a ./40m -f $dialfreq $3
+#echo "Params passed " $dialfreq " "$2" "$3 >> ./40m/params.txt
+cat ./40m/wspr_spots.txt >> ./wspr-multi.txt
+rm ./40m/ALL_WSPR.TXT
+
+# 20m band
+elif [ $2 == '0.176594' ]
+then
+dialfreq=14.0956
+./wsprd -J -H -a ./20m -f $dialfreq $3
+#echo "Params passed " $dialfreq " "$2" "$3 >> ./20m/params.txt
+cat ./20m/wspr_spots.txt >> ./wspr-multi.txt
+rm ./20m/ALL_WSPR.TXT
+fi
+
+#copy the wave files if needed
+#cp *.wav /root
+#echo "Params passed " $dialfreq " "$2" "$3 >> ./params.txt
+
+exit

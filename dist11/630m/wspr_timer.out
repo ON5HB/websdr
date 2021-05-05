@@ -1,0 +1,12 @@
+ 714.66  741.09  761.77  948.69  507.26 7444.50 11204.10
+
+Code segment        Seconds   Frac
+-----------------------------------
+readwavfile         714.66    0.06
+Coarse DT f0 f1     741.09    0.07
+sync_and_demod(0)   761.77    0.07
+sync_and_demod(1)   948.69    0.08
+sync_and_demod(2)   507.26    0.05
+Stack/Fano decoder 7444.50    0.66
+-----------------------------------
+Total              11204.10    1.00
