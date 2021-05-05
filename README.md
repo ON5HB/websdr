@@ -19,6 +19,8 @@ My start "script" is found in dist11, you may need to modify it due to the direc
 
 I updated the files as all rtl-dongles have been replaced with SDRplay modules.
 
+For WSPR-reporting look at "websdr groups io" it is explained there.
+
 
 Best regards,
 
